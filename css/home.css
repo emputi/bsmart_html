@@ -19,7 +19,7 @@ a {
 
 
 img.sfondo {
-	height:100%;
+	height: 100%
 }
 
 #sfondo_nero{
@@ -33,43 +33,13 @@ img.sfondo {
 	z-index: 2000;
 }
 
-#btn_stud, #btn_teach, #btn_login, #btn_insert_code ,#popup_btn_stud, #popup_btn_teach {
+#btn_stud, #btn_teach, #btn_login, #btn_insert_code {
 	position: absolute;
 	cursor: pointer;
-	z-index: 1000;
 }
 
-#popup_btn_stud{
-	background-color: #fff;
-	width:100%;
-	-webkit-box-shadow: 1px 1px 1px 1px #ccc;
-	box-shadow: 1px 1px 1px 1px #ccc;
-}
 
-#popup_btn_stud h3{
-	background: url('../img/tendina_studenti_1.jpg') scroll no-repeat 0 0 transparent;
-	height: 147px;
-	text-indent: -9999px;
-	z-index: 100;
-	margin-top: 0;
-	margin-bottom: 0;
-}
 
-#popup_btn_teach{
-	background-color: #fff;
-	width:100%;
-	-webkit-box-shadow: 1px 1px 1px 1px #ccc;
-	box-shadow: 1px 1px 1px 1px #ccc;
-}
-
-#popup_btn_teach h3{
-	background: url('../img/tendina_insegnanti_1.jpg') scroll no-repeat 0 0 transparent;
-	height: 147px;
-	text-indent: -9999px;
-	z-index: 100;
-	margin-top: 0;
-	margin-bottom: 0;
-}
 
 img.btn {
 	width:100%;
@@ -114,6 +84,84 @@ input, select{
 	font-family: 'caecilia_lt_std75_bold';
 	background-color: #FFF;
 }
+
+
+/* popup studenti */
+
+
+	/* comuni a popup insegnanti */
+	.popup_stud_ins{
+		position: absolute;
+		-webkit-box-shadow: 1px 1px 1px 1px #ccc;
+		box-shadow: 1px 1px 1px 1px #ccc;
+		text-align: center;
+		font-size: 14px;
+		font-family: 'caecilia_lt_std45_light';
+		line-height: 2.5ex;
+		z-index: 1000;
+
+	}
+	.popup_stud_ins strong{
+	    font-family: 'caecilia_lt_std75_bold';
+	}
+	.popup_stud_ins_gratis {
+		font-size: 12px;
+		font-style: italic;
+	}
+	.popup_stud_ins p {
+		margin: 1ex 0;
+	}
+
+	.popup_stud_ins_sfondo {
+		width: 100%;
+	}
+
+	.popup_stud_ins_presentazione {
+		position: absolute;
+		margin: 0 15px 0 10px;
+	}
+
+	.popup_stud_ins_registrati_btn {
+		width: 50%;
+	}
+
+	.popup_stud_ins_gratis {
+		font-style: italic;
+	}
+
+
+	#popup_studenti .popup_stud_ins_registrati_btn {
+		opacity: .3;
+	}
+
+
+
+
+#popup_btn_teach{
+	background-color: #fff;
+	width:100%;
+	-webkit-box-shadow: 1px 1px 1px 1px #ccc;
+	box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+#popup_btn_teach h3{
+	background: url('../img/tendina_insegnanti_1.jpg') scroll no-repeat 0 0 transparent;
+	height: 147px;
+	text-indent: -9999px;
+	z-index: 100;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /*  popup login */
@@ -174,11 +222,9 @@ input, select{
 	margin: 18px 0 0;
 }
 
-
-
 .login_forgotten_pw {
 }
-
+ /* end popup login */
 
 
 
@@ -250,6 +296,6 @@ input, select{
 }
 
 
-
+/* end popup insert_code */
 
 

@@ -1,8 +1,13 @@
 var ratioImgSfondo=1.33375;
 var rect_login;
 
+var win_w=$(window).width();
+var win_h=$(window).height();
 
-
+var sfondo_l, sfondo_t, sfondo_w, sfondo_h
+var btn_login_l, btn_login_t, btn_login_w, btn_login_h;
+var btn_stud_l, btn_stud_t, btn_stud_w, btn_stud_h;
+var popup_studenti_l, popup_studenti_t, popup_studenti_w, popup_studenti_w;
 
 $(document).ready(function () {
 	inizializza();
@@ -64,7 +69,7 @@ function chiudi_prima_pagina(){
 
 function prima_pagina(){
 	$('#btn_stud').click(function(){
-		$("#popup_btn_stud").toggle();
+		$("#popup_studenti").toggle();
 		$("#popup_btn_teach").hide();
 		$("#popup_login").hide();
 		$("#popup_insert_code").hide();
@@ -73,7 +78,7 @@ function prima_pagina(){
 	
 	$('#btn_teach').click(function(){
 		$("#popup_btn_teach").toggle();
-		$("#popup_btn_stud").hide();
+		$("#popup_studenti").hide();
 		$("#popup_login").hide();
 		$("#popup_insert_code").hide();
 		$("#sfondo_nero").hide();
@@ -84,14 +89,14 @@ function prima_pagina(){
 		$(".insert_code_error").hide();
 		$("#sfondo_nero").show();
 		$("#popup_btn_teach").hide();
-		$("#popup_btn_stud").hide();
+		$("#popup_studenti").hide();
 		$("#popup_login").hide();
     });
 	
 	$('#btn_login').click(function(){
 		$("#popup_login").toggle();
 		$(".login_error").hide();
-		$("#popup_btn_stud").hide();
+		$("#popup_studenti").hide();
 		$("#popup_insert_code").hide();
 		$("#popup_btn_teach").hide();
 		$("#sfondo_nero").hide();
@@ -116,7 +121,7 @@ function inizializza() {
 	$("#btn_teach").show();
 	$("#btn_stud").show();
 
-	$("#popup_btn_stud").hide();
+	$("#popup_studenti").hide();
 	$("#popup_btn_teach").hide();
 	$("#popup_login").hide();
 	$("#popup_insert_code").hide();
@@ -133,42 +138,55 @@ function inizializza() {
 
 function adatta() {
 	/*	w=1802;	h=1381 dimensioni della foto sulla home*/	
-	var win_w=$(window).width();
-	var win_h=$(window).height()
+	win_w=Math.max($(window).width(),1000);
+	win_h=Math.max($(window).height(),768);
+
+
 
 	$('.sfondo_pagina').height(win_h)
 	
 
-	var sfondo_h=$('.sfondo_pagina').height();
-	var sfondo_w=sfondo_h*ratioImgSfondo;
-	var sfondo_x=(win_w-sfondo_w)/2;
-	var height_popup_btn_stud = $('#popup_btn_stud').height();
-	var height_popup_btn_teach = $('#popup_btn_teach').height();
+	sfondo_h=$('.sfondo_pagina').height();
+	sfondo_w=sfondo_h*ratioImgSfondo;
+	sfondo_l=(win_w-sfondo_w)/2;
 
-	$('#btn_stud').css('left',sfondo_x+sfondo_w*.2414)
+
+	btn_stud_l=sfondo_l+sfondo_w*.2414;
+	btn_stud_t=sfondo_h*.75;
+	btn_stud_w=sfondo_w*.2519;
+	$('#btn_stud').css('left',sfondo_l+sfondo_w*.2414)
 	$('#btn_stud').css('top',sfondo_h*.75)
 	$('#btn_stud').css('width',sfondo_w*.2519)
 
-	$('#btn_teach').css('left',sfondo_x+sfondo_w*.5066)
+	$('#btn_teach').css('left',sfondo_l+sfondo_w*.5066)
 	$('#btn_teach').css('width',sfondo_w*.2519)
 	$('#btn_teach').css('top',sfondo_h*.75)
 	
 
-	var btn_login_w=.0537*sfondo_w;
-	var btn_login_t=.0507*sfondo_h;
-	var btn_login_r=.1663*sfondo_w+sfondo_x;
+	btn_login_w=.0537*sfondo_w;
+	btn_login_t=.0507*sfondo_h;
+	btn_login_r=.1663*sfondo_w+sfondo_l;
 	$('#btn_login').css('right',btn_login_r)
 	$('#btn_login').css('width',btn_login_w)
 	$('#btn_login').css('top',btn_login_t)
 	$('#popup_login').css('top',btn_login_t+$('#btn_login').height()+5);
 	$('#popup_login').css('right',btn_login_r+btn_login_w/2-$('#popup_login').width()/2);
 	
-	$('#btn_insert_code').css('right',sfondo_x+sfondo_w*.04)
+	$('#btn_insert_code').css('right',sfondo_l+sfondo_w*.04)
 	$('#btn_insert_code').css('width',sfondo_w*.1175)
 	$('#btn_insert_code').css('top',sfondo_h*.0507)
 
-	$('#popup_btn_stud').css('top',sfondo_h*.158-height_popup_btn_stud)
-    $('#popup_btn_teach').css('top',sfondo_h*.158-height_popup_btn_teach)
+	popup_studenti_h=sfondo_h*.6365;
+	popup_studenti_w=btn_stud_w*1.0308;
+	popup_studenti_t=btn_stud_t-popup_studenti_h+btn_stud_w*.51;
+	popup_studenti_l=btn_stud_l;
+
+	$('#popup_studenti').css('top',popup_studenti_t)
+	$('#popup_studenti').css('height',popup_studenti_h);
+    $('#popup_studenti').css('width',popup_studenti_w);
+    $('#popup_studenti').css('left',popup_studenti_l);
+    $('.popup_stud_ins_presentazione').css('top',popup_studenti_h*.40);
 
 }
+
 
