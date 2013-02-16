@@ -42,7 +42,7 @@
 
 
 
-<!-- login -->
+<!-- popup di login -->
 			<div id="popup_login">
 				<div class="login_form">
 					<form accept-charset="UTF-8" action="/users/sign_in?id=new_user" class="new_user" id="new_user" method="post">
@@ -61,7 +61,7 @@
 						<div class="login_error">La password o l'email specificate non sono corrette.</div>
 						<input class="login_submit" name="login" type="submit" value="" />
 						<label class="login_remember">
-							<input type="checkbox" id="remember_me" name="remember_me" value="">
+							<input type="checkbox" id="remember_me" name="remember_me" value="" />
 							<span class="remember_label">Ricordami</span>
 						</label>
 						<div class="login_forgotten_pw">
@@ -70,7 +70,28 @@
 					</form>
 				</div>
 			</div>
-<!-- end login -->
+<!-- end popup di login -->
+
+<!-- popup di inserimento codice di attivazione -->
+			<div id="popup_insert_code">
+				<div class="insert_code_close"></div>
+				<h2>Attiva il tuo libro</h2>
+				<div class="insert_code_form">
+					<form accept-charset="UTF-8" action="/users/sign_in?id=new_user" class="attivazione" id="activation" method="post">
+						<div class="insert_code_input">
+							<label for="book_activation_code">
+								Codice <span>(se non sai dove trovarlo <a href="help.html#trova_codice" target="help_tab">clicca qui</a>)</span>
+							</label>
+							<input type="text" id="book_activation_code" name="book_activation_code" />
+							</div>
+						<div class="insert_code_error">Il codice che hai inserito è già stato utilizzato consulta le pagine della guida per sapere come procedere.</div>
+						<input class="insert_code_submit" name="insert_code_submit" type="submit" value="Submit" />				
+					</form>
+					
+				</div>
+			</div>
+<!-- end popup di inserimento codice di attivazione -->
+
 
          	<div id="btn_stud">
 				<img class="btn" src="img/studenti.png" alt="Studenti"/>
@@ -91,27 +112,6 @@
 					<a class="btn_reg"><img class="btn" src="img/registrati_insegnanti.png" alt="Registrazione Insegnanti"/></a>
 					</p>
 				</div>
-			</div>
-			<div id="popup_btn_insert_code">
-					<div id="btn_close"></div>
-					<div id="confirmBox" class="box">
-						<h2>Attiva il tuo libro</h2>
-						
-						<div class="content_box">
-							<form accept-charset="UTF-8" action="/users/sign_in?id=new_user" class="attivazione" id="activation" method="post">
-								<label for="code">
-									Codice <span>(Se non hai il codice <a href="help.html" target="_blank">clicca qui</a>)</span>
-								</label>
-								<input type="text" id="code" name="code">
-								<div class="clear"></div>
-								<div class="field">
-									<a class="ok_confirm" href="#" target="_self"><span class="imgReplace">Conferma</span></a>
-								</div>
-								<div class="clear"></div>
-							</form>
-							
-						</div>
-					</div>
 			</div>
 
 			<div id="registrazione_1" class="registrazione">

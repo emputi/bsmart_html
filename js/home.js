@@ -67,7 +67,7 @@ function prima_pagina(){
 		$("#popup_btn_stud").toggle();
 		$("#popup_btn_teach").hide();
 		$("#popup_login").hide();
-		$("#popup_btn_insert_code").hide();
+		$("#popup_insert_code").hide();
 		$("#sfondo_nero").hide();
     });
 	
@@ -75,13 +75,14 @@ function prima_pagina(){
 		$("#popup_btn_teach").toggle();
 		$("#popup_btn_stud").hide();
 		$("#popup_login").hide();
-		$("#popup_btn_insert_code").hide();
+		$("#popup_insert_code").hide();
 		$("#sfondo_nero").hide();
     });
 	
 	$('#btn_insert_code').click(function(){
-		$("#popup_btn_insert_code").toggle();
-		$("#sfondo_nero").toggle();
+		$("#popup_insert_code").show();
+		$(".insert_code_error").hide();
+		$("#sfondo_nero").show();
 		$("#popup_btn_teach").hide();
 		$("#popup_btn_stud").hide();
 		$("#popup_login").hide();
@@ -91,14 +92,16 @@ function prima_pagina(){
 		$("#popup_login").toggle();
 		$(".login_error").hide();
 		$("#popup_btn_stud").hide();
-		$("#popup_btn_insert_code").hide();
+		$("#popup_insert_code").hide();
 		$("#popup_btn_teach").hide();
 		$("#sfondo_nero").hide();
     });
 	
-	$('#btn_close').click(function(){
-		$("#popup_btn_insert_code").hide();
+	$('.insert_code_close').click(function(){
+		$("#sfondo_nero").show();
+		$("#popup_insert_code").hide();
 		$("#sfondo_nero").hide();
+
 	});
 	
 	$('.btn_reg').click(function(){
@@ -108,10 +111,15 @@ function prima_pagina(){
 }
 
 function inizializza() {
+	$("#btn_login").show();
+	$("#btn_insert_code").show();
+	$("#btn_teach").show();
+	$("#btn_stud").show();
+
 	$("#popup_btn_stud").hide();
 	$("#popup_btn_teach").hide();
 	$("#popup_login").hide();
-	$("#popup_btn_insert_code").hide();
+	$("#popup_insert_code").hide();
 	$("#sfondo_nero").hide();
 	$("#registrazione_1").hide();
 	$("#registrazione_2").hide();
