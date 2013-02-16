@@ -1,0 +1,47 @@
+/* utils  */
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+.clear {
+	display: block;
+	clear: both;
+}
+
+.full{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	right: 0;
+}
+
+body{
+	font-family: 'dejavu_sansbook';
+	font-size: 12px;
+	color: #000;
+}
+
+h1{
+	font-family: 'caecilia_lt_std75_bold';
+	font-size: 52px;
+}
+
+h2{
+	color: #fff;
+	font-size: 23px;
+}
+
+#wrapper{
+	width: 1024px;
+	margin: 0 auto;
+	position: relative;
+}
+

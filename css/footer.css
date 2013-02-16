@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'dejavu_sansbook';
+    src: url('../fonts/dejavusans.eot');
+    src: url('../fonts/dejavusans.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dejavusans.woff') format('woff'),
+         url('../fonts/dejavusans.ttf') format('truetype'),
+         url('../fonts/dejavusans.svg#dejavu_sansbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+footer {
+	position: relative;
+	font-size: 80%;
+	color: #ffffff;
+	font-weight: normal;
+	font-family: 'dejavu_sansbook';
+}
+
+footer section, footer nav, #social {
+	display: inline;	
+}
+
+#copyright-info div {
+	display: inline;
+}
+
+#footer-navigation ul, #footer-navigation li, #footer-navigation a {
+	display: inline;
+	list-style: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+#footer-navigation li::after {
+	content: '\a0\a0|\a0';
+}
+
+#footer-navigation li.last:after {
+	content: '';
+}
+
+#social{
+	position: absolute;
+	bottom: -7px;
+	margin-left: 20px;
+}
+
+#social div{
+	margin-left: 5px;
+	float: left;
+}
+
+#social div img{
+	width: 20px;
+}
+
+
+

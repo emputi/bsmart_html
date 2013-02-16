@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'caecilia_lt_std45_light';
+    src: url('../fonts/caecilialtstd-light-webfont.eot');
+    src: url('../fonts/caecilialtstd-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/caecilialtstd-light-webfont.woff') format('woff'),
+         url('../fonts/caecilialtstd-light-webfont.ttf') format('truetype'),
+         url('../fonts/caecilialtstd-light-webfont.svg#caecilia_lt_std45_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}  
+
+@font-face {
+    font-family: 'caecilia_lt_std76_bold_italic';
+    src: url('../fonts/caecilialtstd-bolditalic-webfont.eot');
+    src: url('../fonts/caecilialtstd-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/caecilialtstd-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/caecilialtstd-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/caecilialtstd-bolditalic-webfont.svg#caecilia_lt_std76_bold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+    
+@font-face {
+    font-family: 'caecilia_lt_std75_bold';
+    src: url('../fonts/caecilialtstd-bold-webfont.eot');
+    src: url('../fonts/caecilialtstd-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/caecilialtstd-bold-webfont.woff') format('woff'),
+         url('../fonts/caecilialtstd-bold-webfont.ttf') format('truetype'),
+         url('../fonts/caecilialtstd-bold-webfont.svg#caecilia_lt_std75_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dejavu_sansbook';
+    src: url('../fonts/dejavusans.eot');
+    src: url('../fonts/dejavusans.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dejavusans.woff') format('woff'),
+         url('../fonts/dejavusans.ttf') format('truetype'),
+         url('../fonts/dejavusans.svg#dejavu_sansbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	font-family: 'dejavu_sansbook';
+}
