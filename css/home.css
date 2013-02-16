@@ -92,8 +92,6 @@ input, select{
 	/* comuni a popup insegnanti */
 	.popup_stud_ins{
 		position: absolute;
-		-webkit-box-shadow: 1px 1px 1px 1px #ccc;
-		box-shadow: 1px 1px 1px 1px #ccc;
 		text-align: center;
 		font-size: 14px;
 		font-family: 'caecilia_lt_std45_light';
@@ -137,21 +135,6 @@ input, select{
 
 
 
-#popup_btn_teach{
-	background-color: #fff;
-	width:100%;
-	-webkit-box-shadow: 1px 1px 1px 1px #ccc;
-	box-shadow: 1px 1px 1px 1px #ccc;
-}
-
-#popup_btn_teach h3{
-	background: url('../img/tendina_insegnanti_1.jpg') scroll no-repeat 0 0 transparent;
-	height: 147px;
-	text-indent: -9999px;
-	z-index: 100;
-	margin-top: 0;
-	margin-bottom: 0;
-}
 
 
 
