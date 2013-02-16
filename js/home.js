@@ -8,6 +8,7 @@ var sfondo_l, sfondo_t, sfondo_w, sfondo_h
 var btn_login_l, btn_login_t, btn_login_w, btn_login_h;
 var btn_stud_l, btn_stud_t, btn_stud_w, btn_stud_h;
 var popup_studenti_l, popup_studenti_t, popup_studenti_w, popup_studenti_w;
+var popup_insegnanti_l, popup_insegnanti_t, popup_insegnanti_w, popup_insegnanti_w;
 
 $(document).ready(function () {
 	inizializza();
@@ -19,53 +20,18 @@ $(document).ready(function () {
 
 $(window).resize(function () {adatta()})
 
-function inizializza_registrazione_insegnanti(){
-	$("#popup_insegnanti").hide();
-	$("#registrazione_1").show();
-	
-	$('#inizia').click(function(){
-		$("#registrazione_1").hide();
-		$("#registrazione_2").show();
-	});
-	
-	$('#registrazione_2 #submit_2.go_ahead').click(function(){
-		$("#registrazione_2").hide();
-		$("#registrazione_3").show();
-		
-		var array_materie= new Array();
-		$('#registrazione_3 input[type="checkbox"]').click(function(){
-                if ($(this).attr('checked')){
-					array_materie.push($('input[type="checkbox"]:checked').attr("name"));
-					for(var i = 0; i<array_materie.length; i++){
-						var string_subject = array_materie.join(", ");
-						//alert(array_materie[i]);
-						$('#subject_selected span').html(string_subject);
-					}
-				}	
-		});
-	});
-	
-	$('#registrazione_3 #submit_3.go_ahead').click(function(){
-		$("#registrazione_3").hide();
-		$("#registrazione_4").show();
-	});
-	
-	$('#registrazione_4 #submit_4.go_ahead').click(function(){
-		$("#registrazione_4").hide();
-		$("#registrazione_5").show();
-	});
-	
-	$('#registrazione_5 #submit_5.go_ahead').click(function(){
-		$("#registrazione_5").hide();
-		$("#registrazione_6").show();
-	});
-}
 
-function chiudi_prima_pagina(){
+function nascondi_btn_home(){
 	$("#btn_stud").hide();
 	$("#btn_teach").hide();
 	$("#btn_login").hide();
 	$("#btn_insert_code").hide();
+}
+function mostra_btn_home(){
+	$("#btn_stud").show();
+	$("#btn_teach").show();
+	$("#btn_login").show();
+	$("#btn_insert_code").show();
 }
 
 function prima_pagina(){
@@ -104,7 +70,6 @@ function prima_pagina(){
     });
 	
 	$('.insert_code_close').click(function(){
-		$("#sfondo_nero").show();
 		$("#popup_insert_code").hide();
 		$("#sfondo_nero").hide();
 
@@ -116,10 +81,6 @@ function prima_pagina(){
 		$("#popup_insegnanti").hide();
 	});
 	
-	$('.btn_reg').click(function(){
-		chiudi_prima_pagina();
-		inizializza_registrazione();	
-	});
 }
 
 function inizializza() {
@@ -133,6 +94,7 @@ function inizializza() {
 	$("#popup_login").hide();
 	$("#popup_insert_code").hide();
 	$("#sfondo_nero").hide();
+	$(".sequenza_registrazione_insegnanti").hide();
 	$("#registrazione_1").hide();
 	$("#registrazione_2").hide();
 	$("#registrazione_3").hide();
