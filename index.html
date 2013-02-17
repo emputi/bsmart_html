@@ -57,7 +57,7 @@
 						</div>
 						<div class="login_email">
 							<label for="user_email">Email</label>
-							<input autofocus="autofocus" id="user_email" name="user[email]" size="30" type="email" value="" placeholder="mario.rossi@email.it" />
+							<input autofocus="autofocus" id="user_email" name="user[email]" size="30" type="email" value="" placeholder="mario.rossi@esempio.it" />
 						</div>
 						<div class="login_password">
 							<label for="user_password">Password</label>
@@ -134,36 +134,37 @@
 					<h2>Benvenuto! Completa i campi richiesti per iniziare.</h2>
 
 					<div class="accesso_social">
-						Accedi usando<a id="lfacebook" href="#" target="_blank"><span class="imgReplace">Facebook</span></a>Facebook o<a id="lgoogle" href="#" target="_blank"><span class="imgReplace">Google</span></a>Google.
+						Registrati usando i tuoi account<a id="lfacebook" href="#" target="_blank"><span class="imgReplace">Facebook</span></a>Facebook o<a id="lgoogle" href="#" target="_blank"><span class="imgReplace">Google</span></a>Google.
 					</div>
 
+					<div class="registrazione_error">I dati inseriti non sono corretti.</div>
 					<div class="form_registrazione">
 						<form accept-charset="UTF-8" action="" class="registrazione_form" id="registrazione_form" method="post">
-							<div class="error">I dati inseriti non sono corretti.</div>
-							<div class="clear"></div>
-							<div class="field">
-								<label for="teacher_email">Indirizzo email</label><input type="email" id="teacher_email" name="teacher_email" value="" placeholder="io@esempio.it"/>
-							</div>	
-							<div class="clear"></div>
-							<div class="field">	
-								<label for="name">Nome</label><input type="text" id="name" name="name" value="" placeholder="nome" /><label for="surname" id="surname_label">Cognome</label><input type="text" id="surname"  name="surname" value="" placeholder="cognome"/><br />
-							</div>	
-							<div class="clear"></div>
-							<div class="field">
-								<label for="first_password">Password</label><input type="password" id="first_password" name="first_password" value="" placeholder="inserisci password">
+							<div class="registrazione_mail">
+								<label for="teacher_email">Indirizzo email</label>
+								<input type="email" id="teacher_email" name="teacher_email" value="" placeholder="mario.rossi@esempio.it"/>
 							</div>
-							<div class="clear"></div>
-							<div class="field">
-								<label for="confirm_password">Reinserisci password</label><input type="password" id="confirm_password" name="confirm_password" value="" placeholder="reinserisci password">
+							<div class="registrazione_nome_cognome">	
+								<label for="name">Nome</label>
+								<input type="text" id="name" name="name" value="" placeholder="nome" />
+								<label for="surname" id="surname_label">Cognome</label>
+								<input type="text" id="surname"  name="surname" value="" placeholder="cognome"/>
 							</div>
-							<div class="clear"></div>
-							<div class="field">
-								<input type="checkbox" id="accept_privacy_terms" name="checkbox" value="Accetta il trattamento dei dati personali"><label for="accept_privacy_terms" id="dati_personali">Registrandomi acconsento al trattamento dei dati personali in accordo con <a href="#">l’Informativa sulla privacy</a> e accetto, avendole lette, le <a href="#">Linee di condotta sulla privacy</a>, le Linee di condotta sul copyright, le <a href="#">Condizioni d’uso</a> e le <a href="#">integrazioni alle Condizioni d’uso per gli insegnanti</a>.</label>
+							<div class="registrazione_pw">
+								<label for="first_password">Password</label>
+								<input type="password" id="first_password" name="first_password" value="" placeholder="inserisci password - minimo 8 caratteri">
+							</div>
+							<div class="registrazione_conferma_pw">
+								<label for="confirm_password">Reinserisci password</label>
+								<input type="password" id="confirm_password" name="confirm_password" value="" placeholder="reinserisci password">
+							</div>
+							<div class="registrazione_privacy">
+								<input type="checkbox" id="accept_privacy_terms" name="checkbox" value="Accetta il trattamento dei dati personali">
+								<label for="accept_privacy_terms" id="dati_personali">Registrandomi acconsento al trattamento dei dati personali in accordo con <a href="#">l’Informativa sulla privacy</a> e accetto, avendole lette, le <a href="#">Linee di condotta sulla privacy</a>, le Linee di condotta sul copyright, le <a href="#">Condizioni d’uso</a> e le <a href="#">integrazioni alle Condizioni d’uso per gli insegnanti</a>.</label>
 							</div>	
-							<div class="clear"></div>
-							<div class="field">	
+							<div class="registrazione_conferma1">	
 								<label id="voglio_iniziare" for="start">Voglio Iniziare</label>
-								<input class="start" type="" id="start" value="start">
+								<input class="start" type="submit" id="start" value="">
 							</div>	
 							
 						</form>

@@ -1,4 +1,4 @@
-/*   Registrazione 1  */
+/*   DA ORGANIZZARE  */
 
 .imgReplace { 
 	display:block; 
@@ -9,11 +9,12 @@
 	clip:rect(0,0,0,0); 
 }
 
-.error{
-	color: #FF0000;
-	font-size: 10px;
-}
 
+/* end DA ORGANIZZARE */
+
+
+
+/* comuni a tutti gli step di registrazione */
 
 .sequenza_registrazione_insegnanti {
 	margin-left: -475px;
@@ -28,7 +29,6 @@
 	filter: alpha(opacity=90);
 	z-index: 1;
 	color: #595353;
-    font-family: 'caecilia_lt_std45_light';
     text-align: left;
 }
 
@@ -40,14 +40,10 @@
 	font-weight: bold;
 	text-align: center;
 }
-.accesso_social {
-	font-size: 14px;
-	text-align: center;	
-}
-
 
 
 .btn_chiudi_registrazione {
+	/* identico alla classe .insert_code_close */
 	background: url('../img/btn_close.png') no-repeat left top transparent;
 	width: 21px;
 	height: 20px;
@@ -68,59 +64,27 @@
 }
 
 
-
 .form_registrazione {
-	width: 450px;
+	width: 650px;
 	margin: 0 auto;
 }
 
-
-.subtitle{
-	padding-bottom: 15px;
-	font-family: 'caecilia_lt_std75_bold';
-	font-size: 15px;
-	font-weight: bold;
-	position: relative;
-	padding-left: 65px;
-}
-
-#registrazione_1 .subtitle{
-	position: relative;
-	padding-right: 5px;
-}
-
-.subtitle a{
-	padding-right: 5px;
-	padding-top: 7px;
-}
-
-#lfacebook{
-    top: -12px;
-	position: relative;
-	display: inline-block;
-	background: url('../img/lfacebook.png') no-repeat center top transparent;
-	width: 31px;
-	height: 25px;
-}
-
-#lgoogle{
-    display: inline-block;
-	position: relative;
-	top: -11px;
-	background: url('../img/lgoogle.png') no-repeat center top transparent;
-	width: 31px;
-	height: 26px;
+.registrazone_error{
+	color: #FF0000;
+	font-size: 11px;
 }
 
 
-.registrazione .field{
+
+.form_registrazione div{
 	width: 100%;
-	margin-bottom: 5px;
-	margin-top: 10px;
+	min-height: 30px;
+	margin: 0 5px 10px 0;
+	clear: both;
 }
 
-.registrazione .field label{
-	 float: left;
+.form_registrazione label{
+	float: left;
     font-weight: bold;
     margin-right: 10px;
     padding-top: 8px;
@@ -130,62 +94,106 @@
 	left: 20px;
 }
 
-.field span {
+.form_registrazione span {
 	float: left;
 	width: 110px;
 	padding-top: 8px;
 	text-align: left;
 }
 
-.registrazione input{
-   border: 1px solid #bcbdb8;	
-   margin-top: 2px;	
-   margin-right: 8px;	
-   float: left;
-   padding: 5px;
-   font-size: 15px;
-   line-height: 16px;
-   width: 300px;
-   background: #fff;
-   -webkit-border-radius: 0.4em;
-   -moz-border-radius: 0.4em;
-	border-radius: 0.4em;
-	font-size: 12px;
-	font-family: 'dejavu_sansbook';
-	font-style: italic;
-	color: #777;
- }
- 
-.registrazione input[type="checkbox"]{
-	-webkit-border-radius: 0;
-   -moz-border-radius: 0;
-	border-radius: 0;
-	padding: 0;
-	border: 0;
- }
- 
-input[value]{
-	text-indent: -9999px;
+	/* regole sugli input delle form */
+
+	.form_registrazione input[type="text"],
+	.form_registrazione input[type="email"],
+	.form_registrazione input[type="password"]
+	{
+	   border: 1px solid #bcbdb8;	
+	   margin-top: 2px;	
+	   margin-right: 8px;	
+	   float: left;
+	   padding: 5px;
+	   font-size: 15px;
+	   line-height: 16px;
+	   background: #fff;
+	   -webkit-border-radius: 0.4em;
+	   -moz-border-radius: 0.4em;
+		border-radius: 0.4em;
+	    font-family: 'dejavu_sansbook';
+		font-size: 12px;
+	}
+	 
+	.form_registrazione input[type="checkbox"]{
+		-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+		border-radius: 0;
+		padding: 0;
+		border: 0;
+	 }
+
+
+	.form_registrazione input[placeholder] {
+		text-indent: 0px;
+	}
+
+	/* end regole sugli input dei form */
+
+/* end parte comune a tutta la registrazione */
+
+
+/* Registrazione 1 */ 
+
+	/* Sezione registrazione via social networks - aggiungere Twitter */
+	.accesso_social {
+		font-family: 'caecilia_lt_std75_bold';
+		font-size: 15px;
+		text-align: center;	
+	}
+
+	.accesso_social a#lfacebook, .accesso_social a#lgoogle {
+		padding-right: 5px;
+		padding-top: 7px;
+	}
+
+	#lfacebook{
+	    top: -12px;
+		position: relative;
+		display: inline-block;
+		background: url('../img/lfacebook.png') no-repeat center top transparent;
+		width: 31px;
+		height: 25px;
+	}
+
+	#lgoogle{
+	    display: inline-block;
+		position: relative;
+		top: -11px;
+		background: url('../img/lgoogle.png') no-repeat center top transparent;
+		width: 31px;
+		height: 26px;
+	}
+	/* fine registrazione via social networks */
+
+
+.registrazione_1 input[type="email"],
+.registrazione_1 input[type="password"] {
+	width: 412px;
 }
 
-input[placeholder]{
-	text-indent: 0px;
-}
 
 
-.registrazione #name{
+.form_registrazione input#name {
 	width: 120px;
 }
 
-.registrazione #surname{
-	width: 182px;
+.form_registrazione input#surname {
+	width: 195px;
 }
 
 #voglio_iniziare{
 	display:none;
 }
 
-.registrazione #start.start{
+.form_registrazione #start.start{
 	background: url('../img/voglio_iniziare.png') no-repeat left top transparent;
 	width: 290px;
 	height: 32px;
@@ -193,19 +201,20 @@ input[placeholder]{
 	cursor: pointer;
 }
 
-.registrazione #start.start:hover{
+.registrazione_1 #start.start:hover{
 	background: url('../img/voglio_iniziare_roll.png') no-repeat left top transparent;
 	cursor: pointer;
 }
 
-#registrazione_1 #accept_privacy_terms{
+.registrazione_1 #accept_privacy_terms{
 	margin-left: 139px;
 	margin-top: 9px;
 	width: 10px;
+	float: left;
 
 }
 
-.registrazione #dati_personali{
+.form_registrazione #dati_personali{
 	font-size: 10px;
     left: -20px;
     line-height: 15px;
@@ -216,11 +225,11 @@ input[placeholder]{
 	font-weight: normal;
 }
 
-.registrazione #dati_personali a{
+.form_registrazione #dati_personali a{
 	color: #ec0143;
 }
 
-.registrazione #dati_personali a:hover{
+.form_registrazione #dati_personali a:hover{
 	text-decoration: none;
 }
 

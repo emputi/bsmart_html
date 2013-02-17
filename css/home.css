@@ -1,4 +1,4 @@
-
+/* comuni a tutta la pagina: layout, popup, registrazione */
 
 body {
 	text-align: center;
@@ -44,7 +44,6 @@ img.btn {
 }
 
 
-
 input, select{
 	display: inline-block;
 	border: 1px solid #bcbdb8;
@@ -60,64 +59,56 @@ input, select{
 	background-color: #FFF;
 }
 
-
-/* popup studenti */
-
-
-	/* comuni a popup insegnanti */
-	.popup_stud_ins{
-		position: absolute;
-		text-align: center;
-		font-size: 14px;
-		font-family: 'caecilia_lt_std45_light';
-		line-height: 2.5ex;
-		z-index: 1000;
-
-	}
-	.popup_stud_ins strong{
-	    font-family: 'caecilia_lt_std75_bold';
-	}
-	.popup_stud_ins_gratis {
-		font-size: 12px;
-		font-style: italic;
-	}
-	.popup_stud_ins p {
-		margin: 1ex 0;
-	}
-
-	.popup_stud_ins_sfondo {
-		width: 100%;
-	}
-
-	.popup_stud_ins_presentazione {
-		position: absolute;
-		margin: 0 15px 0 10px;
-	}
-
-	.popup_stud_ins_registrati_btn {
-		width: 50%;
-	}
-
-	.popup_stud_ins_gratis {
-		font-style: italic;
-	}
-
-
-	#popup_studenti .popup_stud_ins_registrati_btn {
-		opacity: .3;
-	}
+/* end parte comune */
 
 
 
+/* popup studenti e insegnanti */
 
 
+.popup_stud_ins{
+	position: absolute;
+	text-align: center;
+	font-size: 14px;
+	font-family: 'caecilia_lt_std45_light';
+	line-height: 2.5ex;
+	z-index: 1000;
+
+}
+.popup_stud_ins strong{
+    font-family: 'caecilia_lt_std75_bold';
+}
+.popup_stud_ins_gratis {
+	font-size: 12px;
+	font-style: italic;
+}
+.popup_stud_ins p {
+	margin: 1ex 0;
+}
+
+.popup_stud_ins_sfondo {
+	width: 100%;
+}
+
+.popup_stud_ins_presentazione {
+	position: absolute;
+	margin: 0 15px 0 10px;
+}
+
+.popup_stud_ins_registrati_btn {
+	width: 50%;
+}
+
+.popup_stud_ins_gratis {
+	font-style: italic;
+}
 
 
+#popup_studenti .popup_stud_ins_registrati_btn {
+	opacity: .3;
+}
 
-
-
-
-
+/* end popup studenti e insegnanti */
 
 
 
