@@ -44,6 +44,17 @@ function inizializza_registrazione_insegnanti(){
 		$("#registrazione_5").hide();
 		$("#registrazione_6").show();
 	});
+
 }
+
+
+
+function registrazione_2() {
+	$(".registrazione_1").hide();
+	$("#registrazione_2").show();
+}
+
+
+
 
 

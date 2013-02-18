@@ -57,7 +57,7 @@
 						</div>
 						<div class="login_email">
 							<label for="user_email">Email</label>
-							<input autofocus="autofocus" id="user_email" name="user[email]" size="30" type="email" value="" placeholder="mario.rossi@esempio.it" />
+							<input autofocus="autofocus" id="user_email" name="user[email]" size="30" type="email" value="" placeholder="mario.rossi@esempio.it"/>
 						</div>
 						<div class="login_password">
 							<label for="user_password">Password</label>
@@ -133,44 +133,42 @@
 				<div class="registrazione_1">
 					<h2>Benvenuto! Completa i campi richiesti per iniziare.</h2>
 
-					<div class="accesso_social">
+					<!--div class="accesso_social">
 						Registrati usando i tuoi account<a id="lfacebook" href="#" target="_blank"><span class="imgReplace">Facebook</span></a>Facebook o<a id="lgoogle" href="#" target="_blank"><span class="imgReplace">Google</span></a>Google.
-					</div>
+					</div-->
 
-					<div class="registrazione_error">I dati inseriti non sono corretti.</div>
+					<div class="registrazione_error">I dati inseriti non sono corretti. Tutti i campi sono obbligatori. <ul><li>hdjsahDJKSA</li><li>hkljkljlkò</li></ul></div>
 					<div class="form_registrazione">
-						<form accept-charset="UTF-8" action="" class="registrazione_form" id="registrazione_form" method="post">
-							<div class="registrazione_mail">
-								<label for="teacher_email">Indirizzo email</label>
-								<input type="email" id="teacher_email" name="teacher_email" value="" placeholder="mario.rossi@esempio.it"/>
+						<form accept-charset="UTF-8" action="javascript:registrazione_2()" class="registrazione_form" id="reg_teacher_form" method="post">
+							<div class="registrazione_email">
+								<label for="reg_teacher_email">Indirizzo email</label>
+								<input type="email" id="reg_teacher_email" value placeholder="mario.rossi@esempio.it"/>
 							</div>
 							<div class="registrazione_nome_cognome">	
-								<label for="name">Nome</label>
-								<input type="text" id="name" name="name" value="" placeholder="nome" />
-								<label for="surname" id="surname_label">Cognome</label>
-								<input type="text" id="surname"  name="surname" value="" placeholder="cognome"/>
+								<label for="reg_teacher_name">Nome</label>
+								<input type="text" id="reg_teacher_name" value placeholder="nome"/>
+								<label for="reg_teacher_surname" class="surname_label">Cognome</label>
+								<input type="text" id="reg_teacher_surname" value placeholder="cognome"/>
 							</div>
 							<div class="registrazione_pw">
-								<label for="first_password">Password</label>
-								<input type="password" id="first_password" name="first_password" value="" placeholder="inserisci password - minimo 8 caratteri">
+								<label for="reg_teacher_password">Password</label>
+								<input type="password" id="reg_teacher_password" value placeholder="inserisci password - minimo 8 caratteri">
 							</div>
 							<div class="registrazione_conferma_pw">
-								<label for="confirm_password">Reinserisci password</label>
-								<input type="password" id="confirm_password" name="confirm_password" value="" placeholder="reinserisci password">
+								<label for="reg_teacher_confirm_password">Reinserisci password</label>
+								<input type="password" id="reg_teacher_confirm_password" value placeholder="reinserisci password">
 							</div>
-							<div class="registrazione_privacy">
-								<input type="checkbox" id="accept_privacy_terms" name="checkbox" value="Accetta il trattamento dei dati personali">
-								<label for="accept_privacy_terms" id="dati_personali">Registrandomi acconsento al trattamento dei dati personali in accordo con <a href="#">l’Informativa sulla privacy</a> e accetto, avendole lette, le <a href="#">Linee di condotta sulla privacy</a>, le Linee di condotta sul copyright, le <a href="#">Condizioni d’uso</a> e le <a href="#">integrazioni alle Condizioni d’uso per gli insegnanti</a>.</label>
+							<div class="registrazione_terms_and_privacy">
+								<input type="checkbox" id="reg_teacher_terms_and_privacy">
+								<label for="reg_teacher_terms_and_privacy" id="dati_personali">Cliccando sul pulsante "Voglio iniziare!" richiedo la registrazione a bSmart.it, accettandone le <a href="#">Condizioni d'uso</a> e acconsentendo al trattamento dei dati personali in accordo con <a href="#">l’Informativa sulla privacy</a>.</label>
 							</div>	
-							<div class="registrazione_conferma1">	
-								<label id="voglio_iniziare" for="start">Voglio Iniziare</label>
-								<input class="start" type="submit" id="start" value="">
+							<div class="registrazione_conferma">	
+								<input class="reg_teacher_submit" type="submit" value>
 							</div>	
-							
 						</form>
 					</div>
-					<div class="problema_registrazione">Hai un problema durante la registrazione? <a href="#">Contattaci</a></div>
-					<div class="slide"><span class="active"></span><span></span><span></span><span></span></div>
+					<div class="problema_registrazione">Hai un problema durante la registrazione? <a href="mailto:help@bsmart.it">Contattaci</a></div>
+					<div class="registrazione_progress"><span class="active"></span><span></span><span></span><span></span></div>
 				</div>
 				
 				<div id="registrazione_2" class="registrazione">

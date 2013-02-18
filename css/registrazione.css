@@ -101,6 +101,44 @@
 	text-align: left;
 }
 
+.problema_registrazione{
+	font-size: 10px;
+	position: absolute;
+	right: 130px;
+	bottom: 6px;
+	color: #272b34;
+}
+
+.problema_registrazione a{
+	text-decoration: underline;
+	color: #272b34;
+}
+
+
+.registrazione_progress {
+	width: 52px;
+	position: absolute;
+	right: 60px;
+	bottom: 15px;
+	height: 10px;
+}
+
+.registrazione_progress span{
+	display: inline-table;
+	width: 7px;
+	background: url('../img/pallini.png') no-repeat left top transparent;
+	margin-right: 5px;
+	height: 8px;
+}
+
+.registrazione_progress span.active{
+	background: url('../img/pallini.png') no-repeat left bottom transparent;
+}
+
+
+
+
+
 	/* regole sugli input delle form */
 
 	.form_registrazione input[type="text"],
@@ -133,6 +171,20 @@
 
 	.form_registrazione input[placeholder] {
 		text-indent: 0px;
+	}
+
+	.form_registrazione input.error {
+	   border: 1px solid #ff0000;
+   	   background: #ffcccc;
+
+	}
+
+	.form_registrazione label.error {
+		position: absolute;
+		left: 750px;
+		top: 100px;
+		width: 180px;
+		color: #f00;
 	}
 
 	/* end regole sugli input dei form */
@@ -181,32 +233,19 @@
 
 
 
-.form_registrazione input#name {
+.form_registrazione input#reg_teacher_name {
 	width: 120px;
 }
 
-.form_registrazione input#surname {
+.form_registrazione input#reg_teacher_surname {
 	width: 195px;
 }
 
-#voglio_iniziare{
-	display:none;
+.form_registrazione label.surname_label {
+    width: 68px;
 }
 
-.form_registrazione #start.start{
-	background: url('../img/voglio_iniziare.png') no-repeat left top transparent;
-	width: 290px;
-	height: 32px;
-	margin: 10px auto 10px 195px;
-	cursor: pointer;
-}
-
-.registrazione_1 #start.start:hover{
-	background: url('../img/voglio_iniziare_roll.png') no-repeat left top transparent;
-	cursor: pointer;
-}
-
-.registrazione_1 #accept_privacy_terms{
+.registrazione_terms_and_privacy input[type="checkbox"] {
 	margin-left: 139px;
 	margin-top: 9px;
 	width: 10px;
@@ -214,7 +253,7 @@
 
 }
 
-.form_registrazione #dati_personali{
+.registrazione_terms_and_privacy label {
 	font-size: 10px;
     left: -20px;
     line-height: 15px;
@@ -225,70 +264,36 @@
 	font-weight: normal;
 }
 
-.form_registrazione #dati_personali a{
+.registrazione_terms_and_privacy label a{
 	color: #ec0143;
 }
 
-.form_registrazione #dati_personali a:hover{
-	text-decoration: none;
+.reg_teacher_submit{
+	background: url('../img/voglio_iniziare.png') no-repeat left top transparent;
+	width: 302px;
+	height: 44px;
+	margin: 10px auto 10px 195px;
+	cursor: pointer;
 }
 
-.problema_registrazione{
-	font-size: 10px;
+.reg_teacher_submit:hover{
+	background: url('../img/voglio_iniziare_roll.png') no-repeat left top transparent;
+	cursor: pointer;
+}
+
+
+.registrazione_error{
 	position: absolute;
-	right: 130px;
-	bottom: 6px;
-	color: #272b34;
-}
-
-.problema_registrazione a{
-	text-decoration: underline;
-	color: #272b34;
-}
-
-.slide{
-	width: 52px;
-	position: absolute;
-	right: 60px;
-	bottom: 15px;
-	height: 10px;
-}
-
-.slide span{
-	display: inline-table;
-	width: 7px;
-	background: url('../img/pallini.png') no-repeat left top transparent;
-	margin-right: 5px;
-	height: 8px;
-}
-
-.slide span.active{
-	background: url('../img/pallini.png') no-repeat left bottom transparent;
-}
-
-/*   Registrazione 1  */
-
-#registrazione_1 .content_form_reg{
-	width: 650px;
-	position: relative;
-}
-
-#registrazione_1 input{
-	width: 400px;
-}
-
-#surname_label{
-	margin-right: 12px;
-	width: 54px;
-	margin-left: 10px;
-}
-
-#registrazione_1 .error{
-	position: absolute;
-	left: 143px;
-	top: -14px;
+	left: 735px;
+	top: 100px;
+	width: 180px;
+	color: #ff0000;
 	display: none;
 }
+
+
+
+
 
 /*   Registrazione 2  */
 
