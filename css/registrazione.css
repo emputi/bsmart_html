@@ -145,7 +145,7 @@
 	.form_registrazione input[type="email"],
 	.form_registrazione input[type="password"]
 	{
-	   border: 1px solid #bcbdb8;	
+	   border: 1px solid #bcbdb8;
 	   margin-top: 2px;	
 	   margin-right: 8px;	
 	   float: left;
@@ -179,12 +179,12 @@
 
 	}
 
-	.form_registrazione label.error {
+	.form_registrazione .errorMessage {
 		position: absolute;
-		left: 750px;
-		top: 100px;
 		width: 180px;
-		color: #f00;
+/*		left: 750px;
+		top: 100px;
+*/		color: #f00;
 	}
 
 	/* end regole sugli input dei form */
@@ -250,6 +250,7 @@
 	margin-top: 9px;
 	width: 10px;
 	float: left;
+	background-color: #f00;
 
 }
 

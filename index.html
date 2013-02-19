@@ -139,28 +139,33 @@
 
 					<div class="registrazione_error">I dati inseriti non sono corretti. Tutti i campi sono obbligatori. <ul><li>hdjsahDJKSA</li><li>hkljkljlkò</li></ul></div>
 					<div class="form_registrazione">
-						<form accept-charset="UTF-8" action="javascript:registrazione_2()" class="registrazione_form" id="reg_teacher_form" method="post">
+						<form accept-charset="UTF-8" action="javascript:registrazione_1()" class="registrazione_form" id="reg_teacher_form" method="post" novalidate>
 							<div class="registrazione_email">
 								<label for="reg_teacher_email">Indirizzo email</label>
-								<input type="email" id="reg_teacher_email" value placeholder="mario.rossi@esempio.it"/>
+								<input type="email" id="reg_teacher_email" value="" placeholder="mario.rossi@esempio.it" required="required" />
+								<span class='errorMessage'></span>
 							</div>
 							<div class="registrazione_nome_cognome">	
 								<label for="reg_teacher_name">Nome</label>
-								<input type="text" id="reg_teacher_name" value placeholder="nome"/>
+								<input type="text" id="reg_teacher_name" value placeholder="nome"  required="required"/>
 								<label for="reg_teacher_surname" class="surname_label">Cognome</label>
-								<input type="text" id="reg_teacher_surname" value placeholder="cognome"/>
+								<input type="text" id="reg_teacher_surname" value placeholder="cognome"  required="required" />
+								<span class='errorMessage'></span>
 							</div>
 							<div class="registrazione_pw">
 								<label for="reg_teacher_password">Password</label>
-								<input type="password" id="reg_teacher_password" value placeholder="inserisci password - minimo 8 caratteri">
+								<input type="password" id="reg_teacher_password" value placeholder="inserisci password - minimo 8 caratteri" required="required" minlength="8" />
+								<span class='errorMessage'></span>
 							</div>
 							<div class="registrazione_conferma_pw">
 								<label for="reg_teacher_confirm_password">Reinserisci password</label>
-								<input type="password" id="reg_teacher_confirm_password" value placeholder="reinserisci password">
+								<input type="password" id="reg_teacher_confirm_password" value placeholder="reinserisci password" required="required" minlength="8" equalto="#reg_teacher_password"/>
+								<span class='errorMessage'></span>
 							</div>
 							<div class="registrazione_terms_and_privacy">
-								<input type="checkbox" id="reg_teacher_terms_and_privacy">
+								<input type="checkbox" id="reg_teacher_terms_and_privacy" checkrequired="checkrequired">
 								<label for="reg_teacher_terms_and_privacy" id="dati_personali">Cliccando sul pulsante "Voglio iniziare!" richiedo la registrazione a bSmart.it, accettandone le <a href="#">Condizioni d'uso</a> e acconsentendo al trattamento dei dati personali in accordo con <a href="#">l’Informativa sulla privacy</a>.</label>
+								<span class='errorMessage'></span>
 							</div>	
 							<div class="registrazione_conferma">	
 								<input class="reg_teacher_submit" type="submit" value>
