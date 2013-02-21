@@ -1,116 +1,47 @@
 var ratioImgSfondo=1.33375;
 var rect_login;
 
-var win_w=$(window).width();
-var win_h=$(window).height();
-
 var sfondo_l, sfondo_t, sfondo_w, sfondo_h
 var btn_login_l, btn_login_t, btn_login_w, btn_login_h;
 var btn_stud_l, btn_stud_t, btn_stud_w, btn_stud_h;
 var popup_studenti_l, popup_studenti_t, popup_studenti_w, popup_studenti_w;
 var popup_insegnanti_l, popup_insegnanti_t, popup_insegnanti_w, popup_insegnanti_w;
 
+var win_w=$(window).width();
+var win_h=$(window).height();
+
+
 $(document).ready(function () {
-	inizializza();
 	adatta();
-	$(function() {
-    	$( "#tabs" ).tabs();
-    });
-});
-
-$(window).resize(function () {adatta()})
-
-
-function nascondi_btn_home(){
-	$("#btn_stud").hide();
-	$("#btn_teach").hide();
-	$("#btn_login").hide();
-	$("#btn_insert_code").hide();
-}
-function mostra_btn_home(){
-	$("#btn_stud").show();
-	$("#btn_teach").show();
-	$("#btn_login").show();
-	$("#btn_insert_code").show();
-}
-
-function prima_pagina(){
 	$('#btn_stud').click(function(){
 		$("#popup_studenti").toggle();
 		$("#popup_insegnanti").hide();
-		$("#popup_login").hide();
-		$("#popup_insert_code").hide();
-		$("#sfondo_nero").hide();
-    });
-	
+	});
+
 	$('#btn_teach').click(function(){
 		$("#popup_insegnanti").toggle();
 		$("#popup_studenti").hide();
-		$("#popup_login").hide();
-		$("#popup_insert_code").hide();
-		$("#sfondo_nero").hide();
-    });
-	
-	$('#btn_insert_code').click(function(){
-		$("#popup_insert_code").show();
-		$(".insert_code_error").hide();
-		$("#sfondo_nero").show();
-		$("#popup_insegnanti").hide();
-		$("#popup_studenti").hide();
-		$("#popup_login").hide();
-    });
-	
-	$('#btn_login').click(function(){
-		$("#popup_login").toggle();
-		$(".login_error").hide();
-		$("#popup_studenti").hide();
-		$("#popup_insert_code").hide();
-		$("#popup_insegnanti").hide();
-		$("#sfondo_nero").hide();
-    });
-	
-	$('.insert_code_close').click(function(){
-		$("#popup_insert_code").hide();
-		$("#sfondo_nero").hide();
-
 	});
 
 	$('.sfondo_pagina').click(function(){
-		$("#popup_studenti").hide();
-		$("#popup_login").hide();
 		$("#popup_insegnanti").hide();
+		$("#popup_studenti").hide();
 	});
-	
-}
+});
 
-function inizializza() {
-	$("#btn_login").show();
-	$("#btn_insert_code").show();
-	$("#btn_teach").show();
-	$("#btn_stud").show();
+$(window).resize(function () {
+	adatta()
+});
 
-	$("#popup_studenti").hide();
-	$("#popup_insegnanti").hide();
-	$("#popup_login").hide();
-	$("#popup_insert_code").hide();
-	$("#sfondo_nero").hide();
-	$(".sequenza_registrazione_insegnanti").hide();
-	$("#registrazione_1").hide();
-	$("#registrazione_2").hide();
-	$("#registrazione_3").hide();
-	$("#registrazione_4").hide();
-	$("#registrazione_5").hide();
-	$("#registrazione_6").hide();
-	prima_pagina();
-}
+
+
+		
 
 
 function adatta() {
 	/*	w=1802;	h=1381 dimensioni della foto sulla home*/	
-	win_w=Math.max($(window).width(),900);
-	win_h=Math.max($(window).height(),700);
-
-
+	win_w=Math.max($(window).width(),600);
+	win_h=Math.max($(window).height(),300);
 
 	$('.sfondo_pagina').height(win_h)
 	
@@ -139,8 +70,6 @@ function adatta() {
 	$('#btn_login').css('right',btn_login_r)
 	$('#btn_login').css('width',btn_login_w)
 	$('#btn_login').css('top',btn_login_t)
-	$('#popup_login').css('top',btn_login_t+$('#btn_login').height()+5);
-	$('#popup_login').css('right',btn_login_r+btn_login_w/2-$('#popup_login').width()/2);
 	
 	$('#btn_insert_code').css('right',sfondo_l+sfondo_w*.04)
 	$('#btn_insert_code').css('width',sfondo_w*.1175)

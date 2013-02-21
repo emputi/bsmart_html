@@ -1,0 +1,56 @@
+
+
+
+/* popup insert code  */
+.popup_insert_code {
+	position: absolute;
+	width: 30em;
+	height: 20em;
+	left: 50%;
+	top: 50%;
+	margin-left: -15em;
+	margin-top: -12em;
+}
+
+
+
+
+.popup_insert_code h2 {
+	font-family: 'caecilia_lt_std75_bold';
+	font-size: 25px;
+	margin: 0 auto 10px;
+	font-weight: bold;
+	color: #272b34;
+}
+
+
+.insert_code_form div{
+	margin: 0 0 10px 0;
+}
+
+.insert_code_form label {
+	margin: 0 0 2px;
+	display: block;
+	font-weight: bold;
+ }
+
+ .insert_code_form input[type="text"]  {
+    width: 285px;
+    font-size: 20px;	
+ }
+
+.insert_code_error {
+	color: #FF0000;
+	font-size: 12px;
+}
+
+.insert_code_submit {
+	background: url('../img/confirm.png') no-repeat left top transparent;
+	width: 135px;
+	height: 26px;
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+
+/* end popup insert_code */

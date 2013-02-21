@@ -13,9 +13,9 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/fontface.css">
-        <link rel="stylesheet" href="css/home-login-registrazione-attivazione.css">		
-        <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/home-login-registrazione-attivazione.css">		
+        <link rel="stylesheet" href="css/attivazione.css">
 		<link rel="stylesheet" href="css/jquery-ui-1.10.0.custom.css">
 		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
 
@@ -23,7 +23,7 @@
  		<script src="js/vendor/jquery-1.8.3.min.js"></script>
         <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
 		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
-		<script src="js/home.js"></script>
+		<script src="js/gestione_sfondo_100.js"></script>
 
     </head>
     <body>
@@ -34,45 +34,28 @@
         <!-- Add your site or application content here -->
         <div class="wrapper">
         	<img class="sfondo_pagina" src="img/home_foto.jpg" alt="Sfondo"/>
-			<div id="btn_insert_code">
-				<a href="attivazione.html"><img class="btn" src="img/inserisci_codice.png" alt="Inserisci codice"/></a>
-			</div>
-			<div id="btn_login">
-				<a href="login.html"><img class="btn" src="img/accedi_home.png" alt="Accedi"/></a>
-			</div>
-         	<div id="btn_stud">
-				<img class="btn" src="img/studenti.png" alt="Studenti"/>
-			</div>
-         	<div id="btn_teach">
-				<img class="btn" src="img/insegnanti.png" alt="Insegnanti"/>
-			</div>
 
 
 
-
-<!-- popup studenti -->
-			<div id="popup_studenti" class="popup_stud_ins">
-				<img class="popup_stud_ins_sfondo" src="img/tendina_studenti.png"/>
-				<article class="popup_stud_ins_presentazione">
-					<p>Ciao! Benvenuto in bSmart.it: è l’ambiente dove potrai esplorare, scoprire, sperimentare, imparare e studiare.</p>
-					<p><strong>Resta collegato: potrai iscriverti a partire dalla fine dell’estate!</strong></p>
-					<p class="popup_stud_ins_registrati"><img class="popup_stud_ins_registrati_btn" src="img/registrati_studenti.png" alt="Registrazione studenti"/></p>
-					<p class="popup_stud_ins_gratis">La registrazione a bSmart.it è gratuita.</p>
-				</article>
+<!-- popup di inserimento codice di attivazione -->
+			<div class="popup popup_insert_code">
+				<h2>Attiva il tuo libro</h2>
+				<div class="insert_code_form">
+					<form accept-charset="UTF-8" action="/users/sign_in?id=new_user" class="attivazione" id="activation" method="post">
+						<div class="insert_code_input">
+							<label for="book_activation_code">
+								Codice <span>(se non sai dove trovarlo <a href="help.html#trova_codice" target="help_tab">clicca qui</a>)</span>
+							</label>
+							<input type="text" id="book_activation_code" name="book_activation_code" />
+							</div>
+						<div class="insert_code_error">Il codice che hai inserito è già stato utilizzato consulta le pagine della guida per sapere come procedere.</div>
+						<input class="insert_code_submit" name="insert_code_submit" type="submit" value="Submit" />				
+					</form>
+					
+				</div>
 			</div>
-<!-- end popup studenti -->
+<!-- end popup di inserimento codice di attivazione -->
 
-<!-- popup insegnanti -->
-			<div id="popup_insegnanti" class="popup_stud_ins">
-				<img class="popup_stud_ins_sfondo" src="img/tendina_insegnanti.png"/>
-				<article class="popup_stud_ins_presentazione">
-					<p><strong>Benvenuto in bSmart.it!</strong></p>
-					<p>Entra in un ambiente di lavoro realizzato per le tue esigenze, e dai ancor più valore alla tua didattica con i contenuti, gli strumenti e i servizi che abbiamo creato e scelto per te!<br/><a href="presentazione_insegnanti.html">Leggi...</a>
-					<p class="popup_stud_ins_registrati"><a href="javascript:inizializza_registrazione_insegnanti()"><img class="popup_stud_ins_registrati_btn" src="img/registrati_insegnanti.png" alt="Registrazione insegnanti"/></a></p>
-					<p class="popup_stud_ins_gratis">La registrazione a bSmart.it è gratuita.</p>
-				</article>
-			</div>
-<!-- end popup insegnanti -->
 
 
 

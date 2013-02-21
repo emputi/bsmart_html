@@ -12,6 +12,7 @@
 
 footer {
 	position: relative;
+	top: -20px;
 	font-size: 80%;
 	color: #ffffff;
 	font-weight: normal;

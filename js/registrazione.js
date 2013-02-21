@@ -12,6 +12,10 @@ var validation_messages = {
 
 
 function inizializza_registrazione_insegnanti(){
+	$(function() {
+    	$( "#tabs" ).tabs();
+    });
+
 	$("#popup_insegnanti").hide();
 	nascondi_btn_home();
 	$(".sequenza_registrazione_insegnanti").show();
@@ -21,13 +25,13 @@ function inizializza_registrazione_insegnanti(){
 	})
 
 
-	$("#registrazione_1").show();
+	$(".registrazione_5").show();
+	$(".registrazione_2").hide();
+	$(".registrazione_3").hide();
+	$(".registrazione_4").hide();
+	$(".registrazione_1").hide();
 
 
-	$('#inizia').click(function(){
-		$(".registrazione_1").hide();
-		$("#registrazione_2").show();
-	});
 	$('#registrazione_2 #submit_2.go_ahead').click(function(){
 		$("#registrazione_2").hide();
 		$("#registrazione_3").show();
@@ -67,7 +71,7 @@ function registrazione_1() {
 	var form='#reg_teacher_form'
 	if (validate(form)) {
 		$(".registrazione_1").hide();
-		$("#registrazione_2").show();		
+		$(".registrazione_2").show();		
 	} else {
 		$(form+" input").keyup(function(){validate(form)})
 		$(form+" input[type='checkbox']").change(function(){validate(form)})
@@ -150,4 +154,37 @@ function convertiCodiciErrori(s) {
 	return(m)
 }
 
+
+  $.widget( "custom.catcomplete", $.ui.autocomplete, {
+    _renderMenu: function( ul, items ) {
+      var that = this,
+        currentCategory = "";
+      $.each( items, function( index, item ) {
+        if ( item.category != currentCategory ) {
+          ul.append( "<li class='ui-autocomplete-category'>" + item.category + "</li>" );
+          currentCategory = item.category;
+        }
+        that._renderItemData( ul, item );
+      });
+    }
+  });
+
+    $(function() {
+    var data = [
+      { label: "anders", category: "" },
+      { label: "andreas", category: "" },
+      { label: "antal", category: "" },
+      { label: "annhhx10", category: "Scuola primaria" },
+      { label: "annk K12", category: "Scuola primaria" },
+      { label: "annttop C13", category: "Scuola secondaria di primo grado" },
+      { label: "anders andersson", category: "Scuola secondaria di primo grado" },
+      { label: "andreas andersson", category: "People" },
+      { label: "andreas johnson", category: "People" }
+    ];
+ 
+    $( "#ricerca_scuola" ).catcomplete({
+      delay: 0,
+      source: data
+    });
+  });
 

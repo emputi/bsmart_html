@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>bSmart.it</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/fontface.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/registrazione.css">
+		<link rel="stylesheet" href="css/jquery-ui-1.10.0.custom.css">
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+
+
+ 		<script src="js/vendor/jquery-1.8.3.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		<script src="js/home.js"></script>
+		<script src="js/registrazione.js"></script>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="wrapper">
+        	<img class="sfondo_pagina" src="img/home_foto.jpg" alt="Sfondo"/>
+
+
+
+<!-- popup di inserimento codice di attivazione -->
+			<div id="popup_insert_code">
+				<div class="insert_code_close"></div>
+				<h2>Attiva il tuo libro</h2>
+				<div class="insert_code_form">
+					<form accept-charset="UTF-8" action="/users/sign_in?id=new_user" class="attivazione" id="activation" method="post">
+						<div class="insert_code_input">
+							<label for="book_activation_code">
+								Codice <span>(se non sai dove trovarlo <a href="help.html#trova_codice" target="help_tab">clicca qui</a>)</span>
+							</label>
+							<input type="text" id="book_activation_code" name="book_activation_code" />
+							</div>
+						<div class="insert_code_error">Il codice che hai inserito è già stato utilizzato consulta le pagine della guida per sapere come procedere.</div>
+						<input class="insert_code_submit" name="insert_code_submit" type="submit" value="Submit" />				
+					</form>
+					
+				</div>
+			</div>
+<!-- end popup di inserimento codice di attivazione -->
+
+
+
+
+
+<!-- sequenza di popup di registrazione insegnanti -->
+
+
+			<div class="sequenza_registrazione_insegnanti">
+				<div class="btn_chiudi_registrazione"></div>
+				<div class="img_registrazione_insegnanti"></div>
+				<div class="registrazione_1">
+					<h2>Benvenuto! Completa i campi richiesti per iniziare.</h2>
+
+					<!--div class="accesso_social">
+						Registrati usando i tuoi account<a id="lfacebook" href="#" target="_blank"><span class="imgReplace">Facebook</span></a>Facebook o<a id="lgoogle" href="#" target="_blank"><span class="imgReplace">Google</span></a>Google.
+					</div-->
+
+					<div class="registrazione_error">I dati inseriti non sono corretti. Tutti i campi sono obbligatori. <ul><li>primo messaggio</li><li>secondo messaggio</li></ul></div>
+					<div class="form_registrazione">
+						<form accept-charset="UTF-8" action="javascript:registrazione_1()" class="registrazione_form" id="reg_teacher_form" method="post" novalidate>
+							<div class="registrazione_email">
+								<label for="reg_teacher_email">Indirizzo email</label>
+								<input type="email" id="reg_teacher_email" value="" placeholder="mario.rossi@esempio.it" required="required" />
+								<span class='errorMessage'></span>
+							</div>
+							<div class="registrazione_nome_cognome">	
+								<label for="reg_teacher_name">Nome</label>
+								<input type="text" id="reg_teacher_name" value placeholder="nome"  required="required"/>
+								<label for="reg_teacher_surname" class="surname_label">Cognome</label>
+								<input type="text" id="reg_teacher_surname" value placeholder="cognome"  required="required" />
+								<span class='errorMessage'></span>
+							</div>
+							<div class="registrazione_pw">
+								<label for="reg_teacher_password">Password</label>
+								<input type="password" id="reg_teacher_password" value placeholder="inserisci password - minimo 8 caratteri" required="required" minlength="8" />
+								<span class='errorMessage'></span>
+							</div>
+							<div class="registrazione_conferma_pw">
+								<label for="reg_teacher_confirm_password">Reinserisci password</label>
+								<input type="password" id="reg_teacher_confirm_password" value placeholder="reinserisci password" required="required" minlength="8" equalto="#reg_teacher_password"/>
+								<span class='errorMessage'></span>
+							</div>
+							<div class="registrazione_terms_and_privacy">
+								<input type="checkbox" id="reg_teacher_terms_and_privacy" checkrequired="checkrequired">
+								<label for="reg_teacher_terms_and_privacy" id="dati_personali">Cliccando sul pulsante "Voglio iniziare!" richiedo la registrazione a bSmart.it, accettandone le <a href="#">Condizioni d'uso</a> e acconsentendo al trattamento dei dati personali in accordo con <a href="#">l’Informativa sulla privacy</a>.</label>
+								<span class='errorMessage'></span>
+							</div>	
+							<div class="registrazione_conferma">	
+								<input class="reg_teacher_submit" type="submit" value>
+							</div>	
+						</form>
+					</div>
+					<div class="problema_registrazione">Hai un problema durante la registrazione? <a href="mailto:help@bsmart.it">Contattaci</a></div>
+					<div class="registrazione_progress"><span class="active"></span><span></span><span></span><span></span></div>
+				</div>
+				
+				<div class="registrazione_2">
+					<h2>Indica ora la scuola nella quale insegni.</h3>
+					<div class="registrazione_error">I dati inseriti non sono corretti. Tutti i campi sono obbligatori. <ul><li>primo messaggio</li><li>secondo messaggio</li></ul></div>
+					<div class="form_registrazione">
+						<form accept-charset="UTF-8" action="javascript:registrazione_2()" class="scuole_form" id="school_teacher_form" method="post" novalidate>
+
+							<div class="ricerca_scuola">
+								<label for="ricerca_scuola">Scuola</label>
+								<input type="text" id="ricerca_scuola" value="" placeholder="scrivi la città e parte del nome della scuola" />
+								<span class='errorMessage'></span>
+							</div>
+
+
+
+
+
+							<div class="column">
+								<label for="citta">Città</label>
+								<select id="citta" name="citta">
+								  <option value="Milano">Milano</option>
+								  <option value="Roma">Roma</option>
+								  <option value="Napoli">Napoli</option>
+								  <option value="Torino">Torino</option>
+								</select>
+							</div>
+							<div class="column">
+								<label for="scuola">Scuola</label>
+								<select id="scuola" name="scuola">
+								  <option value="Milano">Milano</option>
+								  <option value="Roma">Roma</option>
+								  <option value="Napoli">Napoli</option>
+								  <option value="Torino">Torino</option>
+								</select>
+							</div>
+							<div class="column last">
+								<label for="classe">Classe</label>
+								<select id="classe" name="classe">
+								  <option value="Milano">Milano</option>
+								  <option value="Roma">Roma</option>
+								  <option value="Napoli">Napoli</option>
+								  <option value="Torino">Torino</option>
+								</select>
+								<a href="#" class="reset"><span class="imgReplace">Elimina Selezione</span></a>
+								<div id="aggiungi">Aggiungi ancora</div>
+							</div>
+							<div class="clear"></div>
+							<div class="line"></div>
+						</form>
+						<div class="clear"></div>
+						<div class="field">	
+							<div id="link_find_school" class="text_left">Se non trovi la scuola <a href="#" target="_blank">clicca qui</a>
+							</div>
+							<input class="go_ahead" type="submit" id="submit_2" value="Continua">
+						</div>	
+					</div>
+					<div class="problema_registrazione">Hai un problema durante la registrazione? <a href="#">Contattaci</a></div>
+					<div class="slide"><span class="active"></span><span></span><span></span><span></span></div>
+				</div>
+				
+				<div class="registrazione_3">
+					<h2>Quali materie insegni?</h2>
+					<div class="form_registrazione">
+						<div id="tabs">
+						  <ul>
+							<li><a href="#tabs-1">Area Umanistica</a></li>
+							<li><a href="#tabs-2">Area Scientifica</a></li>
+							<li><a href="#tabs-3">Area tecnologica</a></li>
+						  </ul>
+						  <div id="tabs-1">
+							<div class="fields">
+								<input type="checkbox" id="agraria" name="agraria" value="agraria"><label for="agraria">Agraria</label>
+							</div>
+							<div class="fields">
+								<input type="checkbox" id="antropologia" name="antropologia" value="antropologia"><label for="antropologia">Antropologia</label>
+							</div>
+							<div class="fields">
+								<input type="checkbox" id="arte" name="arte" value="arte"><label for="arte">Arte</label>
+							</div>
+							<div class="fields">
+								<input type="checkbox" id="disegno" name="disegno" value="disegno"><label for="disegno">Disegno</label>
+							</div>						
+						  </div>
+						  <div id="tabs-2">
+							<div class="fields">
+								<input type="checkbox" id="cartografia" name="cartografia" value="cartografia"><label for="cartografia">Cartografia</label>
+							</div>
+							<div class="fields">
+								<input type="checkbox" id="chimica" name="chimica" value="chimica"><label for="chimica">Chimica</label>
+							</div>					
+						  </div>
+						  <div id="tabs-3">
+							<div class="fields">
+								<input type="checkbox" id="informatica" name="informatica" value="informatica"><label for="informatica">Informatica</label>
+							</div>
+							<div class="fields">
+								<input type="checkbox" id="sistemi" name="sistemi" value="sistemi"><label for="sistemi">Sistemi</label>
+							</div>	
+						  </div>
+						</div>
+						<div class="field">	
+							<div id="subject_selected" class="text_left">Hai selezionato: <span></span>
+							</div>
+							<input class="go_ahead" type="submit" id="submit_3" value="Continua">
+						</div>
+					</div>
+					<div class="problema_registrazione">Hai un problema durante la registrazione? <a href="#">Contattaci</a></div>
+					<div class="slide"><span class="active"></span><span></span><span></span><span></span></div>
+				</div>
+			
+				
+				<div class="registrazione_4">
+					<h2>Controlla e conferma le informazioni</h2>
+					<div class="form_registrazione">
+					    <div class="subtitle">(potrai modificarle in seguito dal tuo profilo)</div>
+						<div class="teacher_data">
+							<div class="teacher_data_header">
+								<div class="icon_teacher">
+									<img src="img/icon_user.jpg" alt="Immagine utente"/>
+								</div>
+								<div class="main_data">
+									<p><span>Nome:</span>Mario Rossi</p>
+									<p><span>Data di nascita:</span>21/09/1981</p>
+								</div>
+							</div>
+							<div class="clear"></div>
+							<div class="teacher_data_content">
+									<p><span>Scuole in cui insegni:</span>Altiero Spinelli, Russel, Università, blablabalablalalbal</p>
+									<p><span>Materie che insegni:</span>informatica, sistemi, matematica, inglese, letteratura, blablabalablalalbal</p>
+									<p><span>Le tue classi:</span>4ias, 4ias</p>
+							</div>
+						</div>
+						<div class="field">	
+							<input class="go_ahead" type="submit" id="submit_4" value="Continua">
+						    <div id="complete_registration">Per completare la registrazione controlla l'email che ti è stata inviata e clicca sul link che ti verrà fornito.</div> 
+							
+						</div>
+					</div>
+					<div class="problema_registrazione">Hai un problema durante la registrazione? <a href="#">Contattaci</a></div>
+					<div class="slide"><span class="active"></span><span></span><span></span><span></span></div>
+				</div>
+				
+				<div class="registrazione_5">
+					<h2>Puoi sfruttare ancora meglio le potenzialità di bSmart.it se colleghi i tuoi account di altri servizi.</h2>
+					<div class="form_registrazione">					
+						<div class="line"></div>
+						<div class="clear"></div>
+						<div>Se connetti i tuoi account gli editori potranno abilitarti direttamente all'utilizzo dei loro contenuti su bSmart.it</div>
+						<div class="field">						
+								<a href="#" id="first_category" class="category_accounts">
+								</a>
+								<a href="#" id="second_category" class="category_accounts">
+								</a>
+						</div>
+						<div class="clear"></div>
+						<div class="line"></div>
+						<div class="field">
+							<input class="go_ahead" type="submit" id="submit_5" value="Continua">
+						</div>
+					</div>
+					<div class="problema_registrazione">Hai un problema durante la registrazione? <a href="#">Contattaci</a></div>
+					<div class="slide"><span class="active"></span><span></span><span></span><span></span></div>
+				</div>
+
+
+			</div>
+
+		
+		<!-- End wrapper -->
+		</div>
+			
+			
+		<footer>
+			<section id="copyright-info">
+				<div>2013 &copy; bSmart srl - p.i. 03728130968</div>
+			</section>
+			<nav id="footer-navigation">
+				<ul>
+					<li><a href="#">che cos'è bSmart</a></li>
+					<li><a href="#">chi siamo</a></li>
+					<li><a href="#">novità in arrivo</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li class="last"><a href="#">contatti</a></li>
+				</ul>
+			</nav>
+			<div id="social">
+					<div id="facebook"><img class="btn" src="img/facebook.png" alt="Facebook"/></div>
+					<div id="twitter"><img class="btn" src="img/twitter.png" alt="Twitter"/></div>
+					<div id="google_plus"><img class="btn" src="img/googleplus.png" alt="Google Plus"/></div>
+			</div>
+		</footer>
+        
+
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		
+    </body>
+</html>

@@ -299,13 +299,24 @@
 /*   Registrazione 2  */
 
 
-#registrazione_2 .content_form_reg{
+  .ui-autocomplete-category {
+    font-weight: bold;
+    padding: .2em .4em;
+    margin: .8em 0 .2em;
+    line-height: 1.5;
+  }
+
+
+
+
+
+/*.registrazione_2 .content_form_reg{
 	width: 670px;
 	font-family: 'dejavu_sansbook';
 	font-weight: 300;
 	font-size: 13px;
 }
-
+*/
 .column{
 	margin-right: 10px;
 	float: left;
@@ -318,7 +329,7 @@
 	display: block;
 }
 
-#registrazione_2 .content_form_reg select {
+.registrazione_2 .form_registrazione select {
    border: 1px solid #bcbdb8;	
    margin-top: 2px;	
    margin-right: 8px;	
