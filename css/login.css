@@ -4,17 +4,20 @@
 
 .popup_login {
 	position: absolute;
-	width: 30em;
-	height: 20em;
+	width: 25em;
+	height: 25em;
 	left: 50%;
 	top: 50%;
 	margin-left: -15em;
 	margin-top: -12em;
 }
-
-
-
-
+.popup_login h2 {
+	font-family: 'caecilia_lt_std75_bold';
+	font-size: 25px;
+	margin: 0 auto 10px;
+	font-weight: bold;
+	color: #272b34;
+}
 
 
 .login_form div{

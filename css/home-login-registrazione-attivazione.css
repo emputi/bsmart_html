@@ -23,7 +23,7 @@ img.sfondo {
 }
 
 
-input[type='text'], input[type='password'], select{
+input[type='text'], input[type='password'], input[type='email'], select{
 	display: inline-block;
 	border: 1px solid #bcbdb8;
 	margin-top: 2px;
