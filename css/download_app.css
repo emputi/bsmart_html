@@ -1,0 +1,373 @@
+/* utils  */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	border: none;
+}
+
+a:active{
+	border: none;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	margin: 0;
+}
+
+ul{
+	margin: 0;
+}
+
+.clear {
+	display: block;
+	clear: both;
+}
+
+.full{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	right: 0;
+	text-indent: -9999px;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.imgReplace { 
+	display:block; 
+	width:0; 
+	height:0; 
+	line-height:0; 
+	overflow:hidden; 
+	clip:rect(0,0,0,0); 
+}
+
+.img{
+	
+}
+
+/* Stili Generali per le pagine del footer, esclusa la pagina novità */
+
+body{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #000;
+}
+
+#wrapper{
+	width: 1024px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#header{
+	background: none;
+	width: 1024px;
+	height: 160px;
+}
+
+#logo{
+	background: url('../img/bsmart.png') repeat scroll 0 0 transparent;
+	width: 130px;
+	height: 40px;
+	margin-left: 35px;
+}
+
+#wrapper #header h1{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 23px;
+	color: #FFF;
+	padding-left: 150px;
+	padding-top: 88px;
+	width: 730px;
+	margin: 0 !important;
+}
+
+.bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+#bg_dark_grey{
+	background: #3d3d3f;
+	width: 1024px;
+	height: 375px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+#bg_grey{
+	background: #ededed;
+	width: 680px;
+	height: 410px;
+	position: absolute;
+	top: 375px;
+	left: 0;
+	z-index: -1;
+}
+
+#bg_gradient_green{
+	background: #ededed;
+	width: 344px;
+	height: 410px;
+	position: absolute;
+	top: 375px;
+	left: 680px;
+	z-index: -1;
+	background-image: linear-gradient(bottom, rgb(167,208,168) 25%, rgb(255,255,255) 87%);
+	background-image: -o-linear-gradient(bottom, rgb(167,208,168) 25%, rgb(255,255,255) 87%);
+	background-image: -moz-linear-gradient(bottom, rgb(167,208,168) 25%, rgb(255,255,255) 87%);
+	background-image: -webkit-linear-gradient(bottom, rgb(167,208,168) 25%, rgb(255,255,255) 87%);
+	background-image: -ms-linear-gradient(bottom, rgb(167,208,168) 25%, rgb(255,255,255) 87%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.25, rgb(167,208,168)),
+		color-stop(0.87, rgb(255,255,255))
+	);
+}
+
+.column_left{
+	float: left;
+}
+
+.column_right{
+	float: left;	
+}
+
+.line_top{
+	height: 1px;
+	border-bottom: 1px solid #e5e5e5;
+	width: 277px;
+	margin: 10px auto 0;
+}
+
+.line_bottom{
+	border-top: 1px solid #c6c6c6;
+	height: 1px;
+	width: 277px;
+	margin: 0 auto 15px;
+}
+
+section{
+	width: 1024px;
+	position: relative;
+}
+
+.top_section{
+	position: relative;
+	
+}
+
+.bottom_section{
+	margin-top: 30px;
+}
+
+#banner{
+	width: 468px;
+	height: 237px;
+	margin: 0 auto;
+	position: relative;
+	background: url('../img/scrivania_piccola.png') scroll no-repeat 0 0 transparent;
+}
+
+#banner:hover{
+	background: url('../img/scrivania_piccola_scroll.png') scroll no-repeat 0 0 transparent;
+}
+
+.top_section h2{
+	position: absolute;
+	right: 80px;
+	bottom: 21px;
+	font-size: 12px;
+	color: #fff;
+	font-weight: 400;
+}
+
+.top_section h2 span{
+	font-style: italic;
+}
+
+#scarica_app .column_left{
+	margin-left: 35px;
+	width: 277px;
+	text-align: center;
+}
+
+#scarica_app .column_middle{
+	margin-left: 60px;
+	margin-right: 60px;
+	width: 277px;
+	float: left;
+	text-align: center;
+}
+
+#scarica_app .column_right{
+	margin-right: 35px;
+	width: 277px;
+	text-align: center;
+}
+
+.icon_img{
+	margin: 0 auto;
+	position: relative;
+}
+
+#scarica_app .column_left .icon_img{
+	background: url('../img/air.png') scroll no-repeat 0 0 transparent;
+	width: 65px;
+	height: 66px;
+}
+
+#scarica_app .column_middle .icon_img{
+	background: url('../img/icona2.png') scroll no-repeat 0 0 transparent;
+	width: 60px;
+	height: 66px;
+}
+
+#scarica_app .column_right .icon_img{
+	background: url('../img/book.png') scroll no-repeat 0 0 transparent;
+	width: 88px;
+	height: 66px;
+}
+
+.bottom_section h3{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	margin: 0 auto;
+}
+
+.download_btn{
+	margin: 0 auto;
+	position: relative;
+}
+
+.download_btn .btn{
+	width: 91px;
+	height: 32px;
+	background: url('../img/download.png') scroll no-repeat 0 0 transparent;
+	margin: 0 auto;
+	display: block;
+	text-indent: -9999px;
+}
+
+.download_btn span{
+	font-size: 10px;
+ }
+ 
+.download_text {
+	margin: 30px auto 40px;
+	text-align: justify;
+	font-size: 12px;
+ }
+ 
+.column_left .download_text, .column_middle .download_text{
+	margin-top: 48px;
+}
+#activation_download{
+	width: 242px;
+	margin: 0 auto;
+}
+ 
+input#activation_code{
+   border: 1px solid #bcbdb8;	
+   float: left;
+   padding: 5px;
+   font-size: 15px;
+   line-height: 21px;
+   background: #fff;
+   -webkit-border-radius: 0.4em;
+   -moz-border-radius: 0.4em;
+	border-radius: 0.4em;
+	font-size: 12px;
+	font-family: 'Lato', serif;
+	font-style: italic;
+	color: #777;
+	height: 21px;
+ }
+ 
+input[value]{
+	text-indent: -9999px;
+}
+
+label{
+	display: none;
+}
+
+input[placeholder]{
+	text-indent: 0px;
+}
+
+#commit{
+	right: 3px;
+	background: url('../img/commit_btn.png') scroll no-repeat 0 0 transparent;
+	width: 39px;
+	height: 33px;
+	position: relative;
+	border: 1px solid #bcbdb8;
+	border-left:none;
+	cursor: pointer;
+}
+
+#popup_book_activated{
+	position: absolute;
+	width: 300px;
+	height: 150px;
+	background-color: #fff;
+	-webkit-border-radius: 0.5em;
+   -moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+	font-family: 'Lato', serif;
+	font-size: 12px;
+	border: 1px solid #bcbdb8;
+	padding: 10px;
+	text-align: left;
+	left: -18px;
+	top: -1px;
+}
+
+#popup_book_activated h3{
+	font-family: 'Lato', serif;
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+#popup_book_activated  ul{
+	margin: 4px 0 0 2px;
+	line-height: 18px;
+	padding: 0 5px 10px 15px;
+}
+
+#popup_book_activated  ul li{
+	padding-left: 5px;
+}
+
+#popup_book_activated a{
+	display: block;
+	color: #FF0000;
+	margin: 0 auto;
+	width: 35px;
+}

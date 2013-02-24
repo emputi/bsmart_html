@@ -15,16 +15,37 @@ footer {
 	top: -20px;
 	font-size: 80%;
 	color: #ffffff;
-	font-weight: normal;
-	font-family: 'dejavu_sansbook';
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
 }
 
 footer section, footer nav, #social {
 	display: inline;	
 }
 
+.footer_no_home #copyright-info {
+	margin-left: 53px;
+}
+
+.footer_no_home{
+	background: url('../img/pattern.jpg') repeat scroll 0 0 transparent;
+	width: 1024px;
+	height: 23px;
+	margin: 0 auto;
+	font-size: 80%;
+	padding-top: 20px;
+	top: inherit;
+}
+
+
+
+
 #copyright-info div {
 	display: inline;
+}
+
+#footer-navigation {
+	margin-left:30px;
 }
 
 #footer-navigation ul, #footer-navigation li, #footer-navigation a {
@@ -44,8 +65,8 @@ footer section, footer nav, #social {
 
 #social{
 	position: absolute;
-	bottom: -7px;
-	margin-left: 20px;
+	bottom: 5px;
+	right: 20px;
 }
 
 #social div{
