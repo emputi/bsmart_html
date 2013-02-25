@@ -1,0 +1,268 @@
+/* utils  */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+.clear {
+	display: block;
+	clear: both;
+}
+
+.full{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	right: 0;
+}
+
+.italic{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+
+
+body{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #000;
+}
+
+#wrapper{
+	width: 1024px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#header{
+	background: url('../img/pattern.jpg') repeat scroll 0 0 transparent;
+	width: 1024px;
+	height: 203px;
+}
+
+#logo{
+	background: url('../img/logo.png') repeat scroll 0 0 transparent;
+	width: 103px;
+	height: 121px;
+	margin-left: 53px;
+}
+
+#wrapper #header h1{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 23px;
+	color: #FFF;
+	padding-left: 180px;
+	padding-top: 88px;
+	width: 730px;
+	margin: 0 !important;
+}
+
+section{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+section h1{
+	margin-left: 53px;
+	font-family: 'Rokkitt', serif;
+	font-weight: 700;
+	font-size: 52px;
+	margin-right: 53px;
+}
+
+section h2{
+	font-family: 'Lato', serif;
+	font-weight: 400;
+	font-size: 16px;
+	margin-left: 53px;
+	margin-right: 53px;
+	position: relative;
+	line-height: 21px;
+}
+
+#lfacebook{
+    background: url("../img/lfacebook.png") no-repeat scroll center top transparent;
+    height: 25px;
+    position: absolute;
+    top: 19px;
+    width: 31px;
+	text-indent: -9999px;
+}
+
+#ltwitter{
+	position: absolute;
+	top: 20px;
+	background: url('../img/twitter-button.gif') no-repeat center top transparent;
+	width: 26px;
+	height: 26px;
+	text-indent: -9999px;
+}
+
+.space{
+	padding-right: 33px;
+}
+
+.articles{
+	float: left;
+	width: 271px;
+	margin: 50px 0 50px 53px;
+}
+
+.articles h1{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 33px;
+	color: #00b2cc;
+	margin: 0;
+}
+
+.articles h2{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	margin: 0;
+	line-height: 18px;
+}
+
+.dashed_line{
+	border-bottom: 1px dashed #ccc;
+}
+
+
+.line{
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #ccc;
+}
+
+.articles .img_box{
+	display: block;
+	width: 265px;
+	height: 300px;
+}
+
+.articles img{
+	display: block;
+	margin: 0 auto;
+}
+
+.articles p{
+	text-align: justify;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.full_articles{
+    position: relative;
+    width: 100%;
+	height: 380px;
+	margin-top: 40px;
+}
+
+.full_articles h1{
+    color: #00b2cc;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+.full_articles .img_box{
+	float: left;
+	width: 435px;
+	margin-left: 53px;
+}
+
+.full_article_box{
+	margin-right: 52px;
+	margin-top: 15px;
+	width: 463px;
+	float: left;
+	margin-left: 20px;
+}
+
+.full_article_box h1, .full_article_box h2{
+	margin: 10px 0;
+}
+
+.full_article_box h2{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.full_article_box p{
+    font-weight: 400;
+	line-height: 18px;
+}
+
+.full_articles .full{
+	z-index: -1;
+	background-image: linear-gradient(top, #F5F5F5 8%, #E8E8E9 54%);
+	background-image: -o-linear-gradient(top, #F5F5F5 8%, #E8E8E9 54%);
+	background-image: -moz-linear-gradient(top, #F5F5F5 8%, #E8E8E9 54%);
+	background-image: -webkit-linear-gradient(top, #F5F5F5 8%, #E8E8E9 54%);
+	background-image: -ms-linear-gradient(top, #F5F5F5 8%, #E8E8E9 54%);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.08, #F5F5F5),
+		color-stop(0.54, #E8E8E9)
+	);
+	-webkit-border-radius: 0.4em;
+   -moz-border-radius: 0.4em;
+	border-radius: 0.4em;
+}
+
+.gradient {
+       filter: none;
+    }
+	
+.big_image{
+	width: 1024px;
+	height: 525px;
+}
+
+.articles p strong{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+/*    Privacy     */
+
+ul{
+	margin: 0;
+}
+
+#privacy section nav{
+	margin: 0 auto 40px 53px;
+}
+
+#privacy section nav ul li{
+	line-height: 23px;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+}
+
+#privacy  article{
+	margin-left: 53px;
+	margin-bottom: 50px;
+	margin: auto 53px 50px;
+}
+
+#privacy article h2{
+	margin-left: 0;
+}
