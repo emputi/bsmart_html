@@ -1,0 +1,72 @@
+/* Chi siamo  */
+
+.banner{
+	background: url('../img/bimbo.jpg') scroll no-repeat 0 0 transparent;
+	height: 683px;
+	width: 1024px;
+	position: relative;
+}
+
+.banner h1{
+	text-align: center;
+	top: 140px;
+	position: relative;
+}
+
+.banner h1 span{
+	font-weight: 400;
+	color: #fff;
+	background-color: #5c5b60;
+	font-size: 42px;
+	font-family: 'Rokkitt', serif;
+	line-height: 60px;
+	padding: 3px 5px;
+}
+
+.chi_siamo .bottom_section{
+	text-align: justify;
+	margin: 70px 50px 40px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	width: 908px;
+	line-height: 22px;
+}
+
+.chi_siamo .bottom_section h3{
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 25px;
+	margin-top: 0;
+}
+
+.chi_siamo .bottom_section .column_right h3{
+	margin-left: 53px;
+}
+
+.chi_siamo .bottom_section .column_left{
+	width: 450px;
+	border-right: 1px solid #aeaeae; 
+	height: 315px;
+	padding-right: 53px;
+}
+
+.chi_siamo .bottom_section .column_right{
+	width: auto;
+	border-left: 1px solid #d4d4d4; 
+	height: 315px;
+	padding-left: 53px;
+	margin-top: 30px;
+}
+
+.chi_siamo .bottom_section .column_right ul{
+	list-style-image: url('../img/star.gif');
+	padding-left: 70px;
+}
+
+.chi_siamo .bottom_section .column_right p span{
+	color: #ea1766;
+	font-style: italic;
+}
+

@@ -68,7 +68,7 @@ body{
 	position: relative;
 }
 
-.header{
+header{
 	background: url('../img/pattern.jpg') repeat scroll 0 0 transparent;
 	width: 1024px;
 	height: 203px;
@@ -81,7 +81,7 @@ body{
 	margin-left: 53px;
 }
 
-.wrapper .header h1{
+header h1{
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	font-size: 23px;
