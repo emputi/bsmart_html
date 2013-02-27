@@ -1,0 +1,123 @@
+/* utils  */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	margin: 0;
+}
+
+ul{
+	margin: 0;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+.clear {
+	display: block;
+	clear: both;
+}
+
+.full{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	right: 0;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.imgReplace { 
+	display:block; 
+	width:0; 
+	height:0; 
+	line-height:0; 
+	overflow:hidden; 
+	clip:rect(0,0,0,0); 
+}
+
+/* Stili Generali per le pagine: novità, chi siamo, che cos'è, faq, pagina insegnanti*/
+
+body{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #000;
+}
+
+.wrapper{
+	width: 1024px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.header{
+	background: url('../img/pattern.jpg') repeat scroll 0 0 transparent;
+	width: 1024px;
+	height: 203px;
+}
+
+.logo{
+	background: url('../img/logo.png') repeat scroll 0 0 transparent;
+	width: 103px;
+	height: 121px;
+	margin-left: 53px;
+}
+
+.wrapper .header h1{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 23px;
+	color: #FFF;
+	padding-left: 180px;
+	padding-top: 88px;
+	width: 730px;
+	margin: 0 !important;
+}
+
+.column_left{
+	float: left;
+}
+
+.column_right{
+	float: left;	
+}
+
+.line_top{
+	height: 1px;
+	border-bottom: 1px solid #e5e5e5;
+	width: 530px;
+	margin: 0 auto;
+}
+
+.line_bottom{
+	border-top: 1px solid #c6c6c6;
+	height: 1px;
+	width: 530px;
+	margin: 0 auto;
+}
+
+.bottom_section{
+	position: relative;
+}
+
+.top_section{
+	position: relative;
+}

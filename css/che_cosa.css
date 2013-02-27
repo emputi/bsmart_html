@@ -1,0 +1,143 @@
+/*  Che cos'è  */
+
+.che_cosa section{
+	margin: 53px;
+	text-align: justify;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.che_cosa  h1{
+	font-family: 'Rokkitt', serif;
+	font-weight: 700;
+	font-size: 40px;
+}
+
+.che_cosa .top_section .column_left{
+	width: 410px;
+}
+
+.che_cosa .top_section .column_right{
+	width: 455px;
+	margin-left: 53px;
+}
+
+.che_cosa .top_section .column_right strong{
+	color: #00b2cc;
+}
+
+.che_cosa .sentence{
+	text-align: center;
+	width: 100%;
+	background: #e6e6e6;
+	padding: 25px 0;
+	margin-top: 50px;
+}
+
+.che_cosa .sentence h2{
+	margin: 0 auto;
+	padding: 0;
+	font-weight: 400;
+	font-size: 22px;
+}
+
+.che_cosa .bottom_section h1{
+	background: url('../img/besmart.png') scroll no-repeat 0 0 transparent;
+	width: 330px;
+	height: 78px;
+	margin: 0 auto 30px 341px;
+}
+
+.che_cosa .bottom_section .column_left{
+	width: 421px;
+	border-right: 1px solid #aeaeae;
+	padding-right: 20px;
+	text-align: right;
+	margin-bottom: 60px;
+}
+
+.che_cosa .bottom_section .column_right{
+	width: 455px;
+	padding-left: 20px;
+	border-left: 1px solid #d4d4d4;
+}
+
+#empty{
+	height: 340px;
+}
+
+.che_cosa .bottom_section p{
+	margin: 0 0 30px;
+}
+
+.che_cosa .bottom_section .last{
+	margin-bottom: 0;
+}
+
+.img_small_ball{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 432px;
+}
+
+#small_ball_1{
+	background: url('../img/small_ball_1.png') scroll no-repeat 0 0 transparent;
+	bottom: 377px;
+}
+
+#small_ball_2{
+	background: url('../img/small_ball_2.png') scroll no-repeat 0 0 transparent;
+	bottom: 304px;
+}
+
+
+#small_ball_3{
+	background: url('../img/small_ball_3.png') scroll no-repeat 0 0 transparent;
+	bottom: 230px;
+}
+
+
+#small_ball_4{
+	background: url('../img/small_ball_4.png') scroll no-repeat 0 0 transparent;
+	bottom: 156px;
+}
+
+#small_ball_5{
+	background: url('../img/small_ball_5.png') scroll no-repeat 0 0 transparent;
+	bottom: 82px;
+}
+ 
+#bg_gradient_grey{
+	z-index: -1;
+	background-image: linear-gradient(bottom, #f4f4f4 8%, #ffffff 54%);
+	background-image: -o-linear-gradient(bottom, #f4f4f4 8%, #ffffff 54%);
+	background-image: -moz-linear-gradient(bottom, #f4f4f4 8%, #ffffff 54%);
+	background-image: -webkit-linear-gradient(bottom, #f4f4f4 8%, #ffffff 54%);
+	background-image: -ms-linear-gradient(bottom, #f4f4f4 8%, #ffffff 54%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.08, #f4f4f4),
+		color-stop(0.54, #ffffff)
+	);
+	position: absolute;
+	width: 1024px;
+	height: 720px;
+	left: 0;
+	top: 210px;
+}
+
+.che_cosa .column_right .sign_up{
+	background: url('../img/registrati_checose.png') scroll no-repeat 0 0 transparent;
+	width: 130px;
+	height: 28px;
+	display: block;
+	margin-top: 10px;
+	margin-left: 142px;
+}
+
+.che_cosa .column_right .sign_up:hover{
+	background: url('../img/registrati_checose_hover.png') scroll no-repeat 0 0 transparent;
+}
