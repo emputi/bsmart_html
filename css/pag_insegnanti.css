@@ -1,0 +1,189 @@
+/* Pagina insegnanti  */
+
+.pag_insegnanti .top_section{
+	background: url('../img/sfondo_pag_insegnanti.jpg') no-repeat scroll 0 0 transparent;
+	height: 750px;
+	width: 1024px;
+}
+
+.pag_insegnanti .top_section h1{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 23px;
+	color: #FFF;
+	margin: 0;
+	text-align: center;
+}
+
+
+.pag_insegnanti .top_section h1{
+	padding-top: 60px; 
+	margin-bottom: 50px;
+}
+
+.pag_insegnanti .top_section h2{
+    bottom: 1px;
+    color: #000000;
+	font-family: 'Lato', serif;
+	font-weight: 400;
+    font-size: 16px;
+    margin: 0 104px;
+    position: absolute;
+    text-align: left;
+	letter-spacing: 1px;
+}
+
+.pag_insegnanti .bottom_section {
+	text-align: justify;
+	margin-top: 50px;
+}
+
+.pag_insegnanti .bottom_section h3{
+	color: #3bad44;
+	font-size: 35px;
+	font-family: 'Rokkitt', serif;
+	font-weight: 700;
+	margin-left: 108px;
+}
+
+
+#example {
+	width: 1024px;
+	height:410px;
+	position:relative;
+	margin: 0 auto 60px;
+}
+
+/*
+	Slideshow style
+*/
+
+#slides {
+	position:absolute;
+	top:15px;
+	left:93px;
+	z-index:100;
+}
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	If height not specified height will be set by the slide content
+	Set to display none, prevents content flash
+*/
+
+.slides_container {
+	width: 808px;
+	/*height:410px;*/
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	Offeset for the 20px of padding
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+#slides .slide {
+	padding:20px;
+	width: 808px;
+	height:410px;
+	display:block;
+}
+
+/*
+	Next/prev buttons
+*/
+#slides .next,#slides .prev {
+	position:absolute;
+	top: 170px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+
+#slides .prev{
+	left: -44px;
+}
+
+#slides .next {
+	left:814px;
+}
+
+.slide h4{
+	color: #3bad44;
+	font-size: 18px;
+	font-weight: 700;
+	margin: 20px 0 10px;
+}
+
+/*
+	Pagination
+*/
+
+.pagination {
+	margin:26px auto 0;
+	width: 114px;
+	padding: 0;
+	position: relative;
+	top: -110px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(../img/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+#slides .link {
+	display:block;
+	margin-top:10px;
+	font-weight:800;
+}
+
+.pag_insegnanti .column_left{
+	width: 318px;
+}
+
+.pag_insegnanti .column_right{
+	width: 420px;
+	margin-left: 40px;
+}
+
+.pag_insegnanti .btn_reg{
+	background: url('../img/registrati_insegnanti.png') scroll no-repeat 0 0 transparent;
+	width: 227px;
+	height: 48px;
+	display: block;
+	margin: 0 auto 70px;
+	cursor: pointer;
+}
+
+.pag_insegnanti .btn_reg:hover{
+	background: url('../img/registrati_insegnanti_hover.png') scroll no-repeat 0 0 transparent;
+}
+
+
+
