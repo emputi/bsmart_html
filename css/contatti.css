@@ -1,0 +1,45 @@
+/* Contatti */
+
+section.contatti {
+	background: url('../img/contact_pattern.jpg') scroll repeat 0 0 #fff;
+	width: 1024px;
+	padding: 50px 0;
+}
+
+.div_contact{
+	background: url('../img/contact_sheet.png') scroll no-repeat 0 0 transparent;
+	width: 781px;
+	height: 591px;
+	margin: 0 auto;
+}
+
+.div_contact h1{
+	background: url('../img/contatti.png') scroll no-repeat 0 0 transparent;
+	width: 328px;
+	height: 44px;
+	margin: 0 auto 100px;
+	position: relative;
+	top: 70px;
+}
+
+.div_contact .field{
+	padding: 50px 5px 10px 20px;
+	width: 530px;
+	margin: 0 auto;
+	font-size: 16px;
+	color: #333;
+}
+
+.div_contact .contact_user{
+	text-transform: uppercase;
+	width: 300px;
+	display: inline-table;
+}
+
+.div_contact .email_contact{
+	padding-left: 0px;
+}
+
+.div_contact span a:hover{
+	text-decoration: underline;
+}
