@@ -9,6 +9,11 @@
 	clip:rect(0,0,0,0); 
 }
 
+.clear{
+	height: 0!important;
+	clear: both!important;
+	margin: 0 !important;
+}
 
 /* end DA ORGANIZZARE */
 
@@ -32,26 +37,21 @@
     text-align: left;
 }
 
-.sequenza_registrazione_insegnanti h2{
+.sequenza_registrazione_insegnanti h2, .sequenza_registrazione_insegnanti h3 {
 	font-family: 'caecilia_lt_std75_bold';
-	font-size: 25px;
 	margin: 30px auto;
 	height: 30px;
 	font-weight: bold;
 	text-align: center;
 }
 
-
-.btn_chiudi_registrazione {
-	/* identico alla classe .insert_code_close */
-	background: url('../img/btn_close.png') no-repeat left top transparent;
-	width: 21px;
-	height: 20px;
-	position: absolute;
-	right: -10px;
-	top: -10px;
-	cursor: pointer;
+.sequenza_registrazione_insegnanti h2 {
+	font-size: 25px;
 }
+.sequenza_registrazione_insegnanti h3 {
+	font-size: 20px;
+}
+
 
 
 .img_registrazione_insegnanti {
@@ -286,357 +286,68 @@
 .registrazione_error{
 	position: absolute;
 	left: 735px;
-	top: 100px;
 	width: 180px;
 	color: #ff0000;
 	display: none;
 }
 
 
+/*  Registazione 3 */
 
-
-
-/*   Registrazione 2  */
-
-
-  .ui-autocomplete-category {
-    font-weight: bold;
-    padding: .2em .4em;
-    margin: .8em 0 .2em;
-    line-height: 1.5;
-  }
-
-
-
-
-
-/*.registrazione_2 .content_form_reg{
-	width: 670px;
-	font-family: 'dejavu_sansbook';
-	font-weight: 300;
-	font-size: 13px;
-}
-*/
-.column{
-	margin-right: 10px;
-	float: left;
-}
-
-.column label{
-	text-align: left;
-	width: 110px;
-	padding-top: 5px;
-	display: block;
-}
-
-.registrazione_2 .form_registrazione select {
-   border: 1px solid #bcbdb8;	
-   margin-top: 2px;	
-   margin-right: 8px;	
-   padding: 5px;
-   font-size: 15px;
-   line-height: 16px;
-   background: #fff;
-   -webkit-border-radius: 0.4em;
-   -moz-border-radius: 0.4em;
-	border-radius: 0.4em;
+.registrazione_3{
+	text-align: center;
 	font-size: 12px;
-	font-family: 'caecilia_lt_std75_bold';
-	font-style: italic;
-	color: #777;
- }
- 
-#citta{
-	width: 140px;
- }
- 
-#scuola{
-	width: 275px;
 }
 
-#classe{
-	width: 210px;
+
+
+.registrazione_3 .line {
+	margin: 60px auto 30px;
+	border-bottom: 1px solid #b1b1b1;
+	width: 700px;
 }
 
-#registrazione_2 .column.last{
-	margin: 0;
-	padding: 0;
-	width: 210px;
+.registrazione_3 .field{
+	margin: 30px auto 0;
+	text-align: center;
 	position: relative;
+	width: 700px;
 }
 
-.text_left{
-	font-size: 10px;
-	color: black;
-	float:left;
+
+
+.registrazione_3 .category_accounts{
+	margin-right: 30px;
+	display: inline-block;
+	margin-left: 5px;
 }
 
-.text_left a{
-	color: #ec0143;
+.registrazione_3 .category_accounts img{
+	border: 1px solid #c0bfbf;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 }
 
-.text_left{
-	font-size: 10px;
-	color: black;
-	float:left;
-}
-
-.registrazione .go_ahead {
-	background: url('../img/testo_avanti.png') no-repeat left top transparent;
+.registrazione_3  .go_ahead {
+	background: url('../img/testo_avanti.png') no-repeat 0 0 transparent;
 	width: 124px;
 	height: 35px;
 	float: right;
-	margin-right: 0;
-	margin-bottom: 50px;
-}
-
-#registrazione_2 .go_ahead:hover {
-	background: url('../img/testo_avanti.png') no-repeat left -36px transparent;
-}
-
-#aggiungi{
-	float: right;
-	color: #ec0143;
-	margin-top: 10px;
-	text-decoration: underline;
-	cursor: pointer;
-}
-
-.line{
-	border-bottom: 1px solid #b1b1b1;
-	margin-top: 40px;
-	margin-bottom: 20px;
-}
-
-.reset{
-	background: url('../img/delete.png') no-repeat 0 0 transparent;
-	width: 15px;
-	height: 14px;
-	position: absolute;
-	right: -25px;
-	top: 50px;
-}
-
-/*   Registrazione 2  */
-
-#registrazione_3 {
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	text-align: left;
-}
-
-#registrazione_3 h3{
-	text-align: center;
-}
-
-#registrazione_3  .content_form_reg{
-	width: 660px;
-}
-
-#registrazione_3 #tabs{	
-	border: 2px solid #a3a2a3;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-}
-
-#registrazione_3 #tabs ul{
-	height: 25px;
-	display: block;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	border-bottom: 2px solid #a3a2a3;
-	background-color: #f1f1f2;
-}
-
-#registrazione_3 #tabs ul li {
-	line-height: 13px;
-	padding-top: 6px;
-	padding-bottom: 3px;
-	display: block;
-	float: left;
-	border: none;
-}
-
-#registrazione_3 #tabs ul li:hover, #registrazione_3 #tabs ul li:active {
-	background-image: linear-gradient(top, #E3043F 34%, #EC0144 67%);
-	background-image: -o-linear-gradient(top, #E3043F 34%, #EC0144 67%);
-	background-image: -moz-linear-gradient(top, #E3043F 34%, #EC0144 67%);
-	background-image: -webkit-linear-gradient(top, #E3043F 34%, #EC0144 67%);
-	background-image: -ms-linear-gradient(top, #E3043F 34%, #EC0144 67%);
-
-	background-image: -webkit-gradient(
-		linear,
-		left top,
-		left bottom,
-		color-stop(0.34, #E3043F),
-		color-stop(0.67, #EC0144)
-	);
-}
-
-#registrazione_3 #tabs ul li a{
-	display: block;
-	float: left;
-	color: #272b34;
-	text-decoration: none;
-	padding: 0 15px;
-	border-right: 1px solid #a3a2a3;
-	font-size: 14px;
-}
-
-#registrazione_3 #tabs > div{
-	position: relative;
-}
-
-#registrazione_3 #tabs .fields{
-	display: inline-block;
-	position: relative;
-	margin: 15px;
-	
-}
-
-#registrazione_3 input[type="checkbox"]{
-	float: left;
-    margin: 1px 0 0 0;
-    padding: 0;
-    width: 10px;
-	cursor: pointer;
-}
-
-#registrazione_3  label {
-    float: left;
-    margin-top: 0;
-    padding-left: 10px;
-}
-
-#registrazione_3 #subject_selected span{
-	float: none;
+	text-indent: -9999px;
+	-webkit-border-radius: 0.4em;
+	-moz-border-radius: 0.4em;
+	border-radius: 0.4em;
+	border: 1px solid #bcbdb8;
 }
 
 
-/*  Registrazione 4 */
-
-
-#registrazione_4 .content_form_reg{
-	width: 550px;
-	text-align: left;
-	font-size: 12px;
+.registrazione_3 input[type="email"],
+.registrazione_3 input[type="password"] {
+	width: 412px;
 }
 
-#registrazione_4 .content_form_reg h3{
-	margin-bottom: 0px; 
-}
 
-#registrazione_4 .subtitle{
-	margin-bottom: 0px; 
-	padding-left: 2px;
-}
-
-#registrazione_4 .teacher_data{
-	width: 100%;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	border: 1px solid #e8e8e8;
-	float: left;
-	color: #000;
-}
-
-#registrazione_4 .teacher_data_header{
-	width: 96%;
-	margin: 10px;
-	float: left;
-	border-bottom: 1px solid #e8e8e8;
-}
-
-#registrazione_4 .teacher_data p span{
-	font-weight: bold;
-	padding-right: 5px;
-}
-
-.icon_teacher{
-	float: left;
-}
-
-.icon_teacher img{
-	border: 1px solid #c0bfbf;
-}
-
-.main_data{
-	float: left;
-	margin-left: 15px;
-}
-
-.main_data p span{
-	font-weight: bold;
-	padding-right: 5px;
-}
-
-.teacher_data_content{
-	width: 100%;
-	margin-bottom: 15px;
-}
-
-.teacher_data_content p{
-	margin: 10px;
-}
-
-#registrazione_4 .go_ahead {
-	background: url('../img/confirm_teach.png') no-repeat -1px -1px transparent;
-	width: 125px;
-	height: 35px;
-	position: relative;
-	bottom: -20px;
-}
-
-#complete_registration{
-	float: right;
-	padding: 3px;
-	background-color: #feedf2;
-	position: relative;
-	bottom: -20px;
-	color: #ec0143;
-	width: 290px;
-}
-
-/*  Registrazione 5*/
-
-#registrazione_5 {
-	height: 380px;
-	margin-top: -190px;
-}
-
-#registrazione_5 .content_form_reg {
-	width: 660px;
-}
-
-#registrazione_5 .content_form_reg {
-	margin-bottom: 70px;
-}
-
-#registrazione_5 .content_form_reg div{
-	font-family: 'caecilia_lt_std75_bold';
-	font-size: 12px;
-}
-
-#registrazione_5 .category_accounts{
-	margin-top: 30px;
-	margin-right: 30px;
-	float: left;
-	width: 182px;
-	height: 43px;
-	border: 1px solid #c0bfbf;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	display: block;
-}
-
-#registrazione_5 #first_category{
-	background: url('../img/zanichelli.jpg') no-repeat 0 0 transparent;
-	margin-left: 130px;
-}
-
-#registrazione_5 #second_category{
-	background: url('../img/scuola_com.jpg') no-repeat 0 0 transparent;
+.registrazione_3 .form_registrazione span{
+	width: 150px;
 }
 
