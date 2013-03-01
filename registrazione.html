@@ -15,9 +15,9 @@
 		<link rel="stylesheet" href="css/fontface.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/registrazione.css">
+        <link rel="stylesheet" href="css/home-login-registrazione-attivazione.css">        
 		<link rel="stylesheet" href="css/jquery-ui-1.10.0.custom.css">
 		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
-
 
  		<script src="js/vendor/jquery-1.8.3.min.js"></script>
         <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
@@ -65,7 +65,6 @@
 
 
 			<div class="sequenza_registrazione_insegnanti">
-				<div class="btn_chiudi_registrazione"></div>
 				<div class="img_registrazione_insegnanti"></div>
 				<div class="registrazione_1">
 					<h2>Benvenuto! Completa i campi richiesti per iniziare.</h2>
@@ -109,172 +108,10 @@
 							</div>	
 						</form>
 					</div>
-					<div class="problema_registrazione">Hai un problema durante la registrazione? <a href="mailto:help@bsmart.it">Contattaci</a></div>
-					<div class="registrazione_progress"><span class="active"></span><span></span><span></span><span></span></div>
 				</div>
 				
-				<div class="registrazione_2">
-					<h2>Indica ora la scuola nella quale insegni.</h3>
-					<div class="registrazione_error">I dati inseriti non sono corretti. Tutti i campi sono obbligatori. <ul><li>primo messaggio</li><li>secondo messaggio</li></ul></div>
-					<div class="form_registrazione">
-						<form accept-charset="UTF-8" action="javascript:registrazione_2()" class="scuole_form" id="school_teacher_form" method="post" novalidate>
-
-							<div class="ricerca_scuola">
-								<label for="ricerca_scuola">Scuola</label>
-								<input type="text" id="ricerca_scuola" value="" placeholder="scrivi la città e parte del nome della scuola" />
-								<span class='errorMessage'></span>
-							</div>
-
-
-
-
-
-							<div class="column">
-								<label for="citta">Città</label>
-								<select id="citta" name="citta">
-								  <option value="Milano">Milano</option>
-								  <option value="Roma">Roma</option>
-								  <option value="Napoli">Napoli</option>
-								  <option value="Torino">Torino</option>
-								</select>
-							</div>
-							<div class="column">
-								<label for="scuola">Scuola</label>
-								<select id="scuola" name="scuola">
-								  <option value="Milano">Milano</option>
-								  <option value="Roma">Roma</option>
-								  <option value="Napoli">Napoli</option>
-								  <option value="Torino">Torino</option>
-								</select>
-							</div>
-							<div class="column last">
-								<label for="classe">Classe</label>
-								<select id="classe" name="classe">
-								  <option value="Milano">Milano</option>
-								  <option value="Roma">Roma</option>
-								  <option value="Napoli">Napoli</option>
-								  <option value="Torino">Torino</option>
-								</select>
-								<a href="#" class="reset"><span class="imgReplace">Elimina Selezione</span></a>
-								<div id="aggiungi">Aggiungi ancora</div>
-							</div>
-							<div class="clear"></div>
-							<div class="line"></div>
-						</form>
-						<div class="clear"></div>
-						<div class="field">	
-							<div id="link_find_school" class="text_left">Se non trovi la scuola <a href="#" target="_blank">clicca qui</a>
-							</div>
-							<input class="go_ahead" type="submit" id="submit_2" value="Continua">
-						</div>	
-					</div>
-					<div class="problema_registrazione">Hai un problema durante la registrazione? <a href="#">Contattaci</a></div>
-					<div class="slide"><span class="active"></span><span></span><span></span><span></span></div>
-				</div>
 				
-				<div class="registrazione_3">
-					<h2>Quali materie insegni?</h2>
-					<div class="form_registrazione">
-						<div id="tabs">
-						  <ul>
-							<li><a href="#tabs-1">Area Umanistica</a></li>
-							<li><a href="#tabs-2">Area Scientifica</a></li>
-							<li><a href="#tabs-3">Area tecnologica</a></li>
-						  </ul>
-						  <div id="tabs-1">
-							<div class="fields">
-								<input type="checkbox" id="agraria" name="agraria" value="agraria"><label for="agraria">Agraria</label>
-							</div>
-							<div class="fields">
-								<input type="checkbox" id="antropologia" name="antropologia" value="antropologia"><label for="antropologia">Antropologia</label>
-							</div>
-							<div class="fields">
-								<input type="checkbox" id="arte" name="arte" value="arte"><label for="arte">Arte</label>
-							</div>
-							<div class="fields">
-								<input type="checkbox" id="disegno" name="disegno" value="disegno"><label for="disegno">Disegno</label>
-							</div>						
-						  </div>
-						  <div id="tabs-2">
-							<div class="fields">
-								<input type="checkbox" id="cartografia" name="cartografia" value="cartografia"><label for="cartografia">Cartografia</label>
-							</div>
-							<div class="fields">
-								<input type="checkbox" id="chimica" name="chimica" value="chimica"><label for="chimica">Chimica</label>
-							</div>					
-						  </div>
-						  <div id="tabs-3">
-							<div class="fields">
-								<input type="checkbox" id="informatica" name="informatica" value="informatica"><label for="informatica">Informatica</label>
-							</div>
-							<div class="fields">
-								<input type="checkbox" id="sistemi" name="sistemi" value="sistemi"><label for="sistemi">Sistemi</label>
-							</div>	
-						  </div>
-						</div>
-						<div class="field">	
-							<div id="subject_selected" class="text_left">Hai selezionato: <span></span>
-							</div>
-							<input class="go_ahead" type="submit" id="submit_3" value="Continua">
-						</div>
-					</div>
-					<div class="problema_registrazione">Hai un problema durante la registrazione? <a href="#">Contattaci</a></div>
-					<div class="slide"><span class="active"></span><span></span><span></span><span></span></div>
-				</div>
-			
 				
-				<div class="registrazione_4">
-					<h2>Controlla e conferma le informazioni</h2>
-					<div class="form_registrazione">
-					    <div class="subtitle">(potrai modificarle in seguito dal tuo profilo)</div>
-						<div class="teacher_data">
-							<div class="teacher_data_header">
-								<div class="icon_teacher">
-									<img src="img/icon_user.jpg" alt="Immagine utente"/>
-								</div>
-								<div class="main_data">
-									<p><span>Nome:</span>Mario Rossi</p>
-									<p><span>Data di nascita:</span>21/09/1981</p>
-								</div>
-							</div>
-							<div class="clear"></div>
-							<div class="teacher_data_content">
-									<p><span>Scuole in cui insegni:</span>Altiero Spinelli, Russel, Università, blablabalablalalbal</p>
-									<p><span>Materie che insegni:</span>informatica, sistemi, matematica, inglese, letteratura, blablabalablalalbal</p>
-									<p><span>Le tue classi:</span>4ias, 4ias</p>
-							</div>
-						</div>
-						<div class="field">	
-							<input class="go_ahead" type="submit" id="submit_4" value="Continua">
-						    <div id="complete_registration">Per completare la registrazione controlla l'email che ti è stata inviata e clicca sul link che ti verrà fornito.</div> 
-							
-						</div>
-					</div>
-					<div class="problema_registrazione">Hai un problema durante la registrazione? <a href="#">Contattaci</a></div>
-					<div class="slide"><span class="active"></span><span></span><span></span><span></span></div>
-				</div>
-				
-				<div class="registrazione_5">
-					<h2>Puoi sfruttare ancora meglio le potenzialità di bSmart.it se colleghi i tuoi account di altri servizi.</h2>
-					<div class="form_registrazione">					
-						<div class="line"></div>
-						<div class="clear"></div>
-						<div>Se connetti i tuoi account gli editori potranno abilitarti direttamente all'utilizzo dei loro contenuti su bSmart.it</div>
-						<div class="field">						
-								<a href="#" id="first_category" class="category_accounts">
-								</a>
-								<a href="#" id="second_category" class="category_accounts">
-								</a>
-						</div>
-						<div class="clear"></div>
-						<div class="line"></div>
-						<div class="field">
-							<input class="go_ahead" type="submit" id="submit_5" value="Continua">
-						</div>
-					</div>
-					<div class="problema_registrazione">Hai un problema durante la registrazione? <a href="#">Contattaci</a></div>
-					<div class="slide"><span class="active"></span><span></span><span></span><span></span></div>
-				</div>
 
 
 			</div>
