@@ -17,6 +17,10 @@
 	text-decoration: underline;
 }
 
+.che_cosa .top_section a:hover {
+	text-decoration: none;
+}
+
 .che_cosa .top_section .column_left{
 	width: 410px;
 }
@@ -76,6 +80,10 @@
 
 .che_cosa .bottom_section .last{
 	margin-bottom: 0;
+}
+
+.light_blue{
+	color: #00b2cc;
 }
 
 .img_small_ball{
