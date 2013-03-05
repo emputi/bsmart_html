@@ -1,6 +1,6 @@
 /* Faq  */
 
- section.faq{
+section.faq{
 	margin-left: 53px;
 	text-align: justify;
 	font-size: 16px;
@@ -11,13 +11,13 @@
 	height: 110px;
 	margin-top: 70px;
 	width: 970px;
-	background: url('../img/penna.png') scroll no-repeat bottom right transparent;
+	background: url('../img/penna.png') scroll no-repeat top right transparent;
 	font-family: 'Rokkitt', serif;
 	font-weight: 700;
 	font-size: 66px;
 }
 
-.faq section h2, #faq section h3{
+#faq section h3{
 	font-family: 'Rokkitt', serif;
 	font-weight: 700;
 	font-size: 22px;
@@ -35,12 +35,27 @@
 	margin-bottom: 0px;
 	margin-top: 50px;
 	color: #00b2cc;
+	font-family: 'Rokkitt', serif;
+	font-weight: 400;
+	font-size: 24px;
 }
+
+.faq section h2{
+	color: #00b2cc;
+	font-family: 'Rokkitt', serif;
+	font-weight: 400;
+	font-size: 26px;
+}
+
+.faq section .column_right h2{
+	color: #000;
+}
+
 
 .faq section .column_right{
 	width: 214px;
 	border-left: 1px solid #d4d4d4; 
-	padding: 0 53px;
+	padding: 23px 53px;
 	height: 1752px;
 	margin-bottom: 70px;
 }
@@ -60,4 +75,26 @@
 
 .faq section .column_right h3{
 	color: #000;
+}
+
+.bg_light_blue{
+	z-index: -1;
+	width: 321px;
+	height: 450px;
+	position: absolute;
+	top: 437px;
+	right: 0;
+	background-image: linear-gradient(bottom, rgb(156,220,247) 25%, rgb(239,249,254) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(156,220,247) 25%, rgb(239,249,254) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(156,220,247) 25%, rgb(239,249,254) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(156,220,247) 25%, rgb(239,249,254) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(156,220,247) 25%, rgb(239,249,254) 100%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.25, rgb(156,220,247)),
+		color-stop(1, rgb(239,249,254))
+	);
 }
