@@ -32,14 +32,10 @@ section.contatti {
 
 .div_contact .contact_user{
 	text-transform: uppercase;
-	width: 300px;
+	width: 330px;
 	display: inline-table;
 }
 
 .div_contact .email_contact{
 	padding-left: 0px;
-}
-
-.div_contact span a:hover{
-	text-decoration: underline;
 }
