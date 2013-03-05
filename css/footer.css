@@ -23,10 +23,6 @@ footer section, footer nav, #social {
 	display: inline;	
 }
 
-.footer_no_home #copyright-info {
-	margin-left: 53px;
-}
-
 .footer_no_home{
 	background: url('../img/pattern.jpg') repeat scroll 0 0 transparent;
 	width: 1024px;
@@ -37,8 +33,10 @@ footer section, footer nav, #social {
 	top: inherit;
 }
 
-
-
+.footer_no_home #copyright-info {
+	margin-left: 53px;
+	font-size: 80%;
+}
 
 #copyright-info div {
 	display: inline;
